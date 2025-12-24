@@ -1,0 +1,17 @@
+#!/bin/sh
+# Set up tautulli user and config directory (pkg version)
+# pkg creates tautulli:tautulli user
+
+PUID=${PUID:-1000}
+PGID=${PGID:-1000}
+
+echo "[tautulli-pkg] Setting up tautulli user with PUID=$PUID PGID=$PGID"
+
+# Modify tautulli user/group to match requested UID/GID
+pw groupmod tautulli -g "$PGID" 2>/dev/null || true
+
+# Ensure config directory has correct ownership
+mkdir -p /config
+chown -R bsd:bsd /config /usr/local/www/tautulli
+
+echo "[tautulli-pkg] Configuration complete"

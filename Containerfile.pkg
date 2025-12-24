@@ -1,0 +1,49 @@
+ARG BASE_VERSION=15
+FROM ghcr.io/daemonless/base:${BASE_VERSION}
+
+# Disable Tautulli internal auto-updater (updates via container rebuild)
+ENV TAUTULLI_DOCKER=True
+
+ARG FREEBSD_ARCH=amd64
+LABEL org.opencontainers.image.title="tautulli" \
+      org.opencontainers.image.description="Tautulli Plex monitoring on FreeBSD" \
+      org.opencontainers.image.source="https://github.com/daemonless/tautulli" \
+      org.opencontainers.image.url="https://tautulli.com/" \
+      org.opencontainers.image.documentation="https://github.com/Tautulli/Tautulli/wiki" \
+      org.opencontainers.image.licenses="GPL-3.0-only" \
+      org.opencontainers.image.vendor="daemonless" \
+      org.opencontainers.image.authors="daemonless" \
+      io.daemonless.port="8181" \
+      io.daemonless.arch="${FREEBSD_ARCH}"
+
+# Install Tautulli from FreeBSD packages
+# pkg handles all dependencies and creates tautulli user
+# Note: py311-setuptools is a missing dependency in the port (provides pkg_resources)
+RUN pkg update && \
+    pkg install -y tautulli py311-setuptools && \
+    TAUTULLI_VERSION=$(pkg info tautulli | sed -n 's/.*Version.*: *//p') && \
+    mkdir -p /app && echo "$TAUTULLI_VERSION" > /app/version && \
+    pkg clean -ay && \
+    rm -rf /var/cache/pkg/* /var/db/pkg/repos/*
+
+# Create config directory
+RUN mkdir -p /config && \
+    chown -R bsd:bsd /config
+
+# Copy service definition
+COPY root/ /
+
+# Use pkg-specific scripts
+COPY root/etc/services.d/tautulli/run.pkg /etc/services.d/tautulli/run
+COPY root/etc/cont-init.d/20-tautulli-config.pkg /etc/cont-init.d/20-tautulli-config
+
+# Make scripts executable
+RUN chmod +x /healthz /etc/services.d/tautulli/run /etc/cont-init.d/* 2>/dev/null || true
+
+# Set up s6 service link
+RUN mkdir -p /run/s6/services/tautulli && \
+    ln -sf /etc/services.d/tautulli/run /run/s6/services/tautulli/run
+
+EXPOSE 8181
+VOLUME /config
+

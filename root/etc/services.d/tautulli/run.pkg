@@ -1,0 +1,8 @@
+#!/bin/sh
+# Tautulli s6 service (pkg version)
+
+export HOME=/config
+export TAUTULLI_DOCKER=True
+
+cd /usr/local/www/tautulli
+exec /usr/local/bin/s6-setuidgid bsd /usr/local/bin/python3.11 Tautulli.py --nolaunch --datadir /config

@@ -7,7 +7,7 @@ ENV TAUTULLI_DOCKER=True
 ARG FREEBSD_ARCH=amd64
 ARG PACKAGES="python311 py311-pip py311-setuptools py311-sqlite3 git-lite ca_root_nss"
 
-LABEL org.opencontainers.image.title="tautulli" \
+LABEL org.opencontainers.image.title="Tautulli" \
     org.opencontainers.image.description="Tautulli Plex monitoring on FreeBSD" \
     org.opencontainers.image.source="https://github.com/daemonless/tautulli" \
     org.opencontainers.image.url="https://tautulli.com/" \

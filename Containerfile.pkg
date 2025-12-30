@@ -5,6 +5,7 @@ FROM ghcr.io/daemonless/base:${BASE_VERSION}
 ENV TAUTULLI_DOCKER=True
 
 ARG FREEBSD_ARCH=amd64
+ARG PKG_NAME=tautulli
 LABEL org.opencontainers.image.title="Tautulli" \
       org.opencontainers.image.description="Tautulli Plex monitoring on FreeBSD" \
       org.opencontainers.image.source="https://github.com/daemonless/tautulli" \
@@ -14,14 +15,14 @@ LABEL org.opencontainers.image.title="Tautulli" \
       org.opencontainers.image.vendor="daemonless" \
       org.opencontainers.image.authors="daemonless" \
       io.daemonless.port="8181" \
-      io.daemonless.arch="${FREEBSD_ARCH}"
+      io.daemonless.arch="${FREEBSD_ARCH}" \
+      io.daemonless.pkg-name="${PKG_NAME}"
 
-# Install Tautulli from FreeBSD packages
-# pkg handles all dependencies and creates tautulli user
+# Install from FreeBSD packages
 # Note: py311-setuptools is a missing dependency in the port (provides pkg_resources)
 RUN pkg update && \
-    pkg install -y tautulli py311-setuptools && \
-    TAUTULLI_VERSION=$(pkg info tautulli | sed -n 's/.*Version.*: *//p') && \
+    pkg install -y ${PKG_NAME} py311-setuptools && \
+    TAUTULLI_VERSION=$(pkg info ${PKG_NAME} | sed -n 's/.*Version.*: *//p') && \
     mkdir -p /app && echo "$TAUTULLI_VERSION" > /app/version && \
     pkg clean -ay && \
     rm -rf /var/cache/pkg/* /var/db/pkg/repos/*

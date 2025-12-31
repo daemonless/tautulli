@@ -36,7 +36,7 @@ RUN pkg update && \
 RUN mkdir -p /app/tautulli && \
     chmod 755 /app && \
     TAUTULLI_VERSION=$(fetch -qo - "${UPSTREAM_URL}" | \
-    sed -n "${UPSTREAM_SED}" | head -1) && \
+    jq -r "${UPSTREAM_JQ}") && \
     echo "Downloading Tautulli ${TAUTULLI_VERSION}" && \
     fetch -qo - "https://github.com/Tautulli/Tautulli/archive/refs/tags/${TAUTULLI_VERSION}.tar.gz" | \
     tar xzf - -C /app/tautulli --strip-components=1 && \

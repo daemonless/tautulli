@@ -21,7 +21,7 @@ LABEL org.opencontainers.image.title="Tautulli" \
     io.daemonless.arch="${FREEBSD_ARCH}" \
     io.daemonless.category="Media Servers" \
     io.daemonless.upstream-url="${UPSTREAM_URL}" \
-    io.daemonless.upstream-sed="${UPSTREAM_SED}" \
+    io.daemonless.upstream-jq="${UPSTREAM_JQ}" \
     io.daemonless.packages="${PACKAGES}"
 
 # Install dependencies (py311-setuptools provides pkg_resources for bundled apscheduler)

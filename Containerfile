@@ -7,7 +7,7 @@ ENV TAUTULLI_DOCKER=True
 ARG FREEBSD_ARCH=amd64
 ARG PACKAGES="python311 py311-pip py311-setuptools py311-sqlite3 git-lite ca_root_nss"
 ARG UPSTREAM_URL="https://api.github.com/repos/Tautulli/Tautulli/releases/latest"
-ARG UPSTREAM_SED="s/.*\"tag_name\":\"\\([^\"]*\\)\".*/\\1/p"
+ARG UPSTREAM_JQ=".tag_name"
 
 LABEL org.opencontainers.image.title="Tautulli" \
     org.opencontainers.image.description="Tautulli Plex monitoring on FreeBSD" \

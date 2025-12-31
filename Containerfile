@@ -6,6 +6,8 @@ ENV TAUTULLI_DOCKER=True
 
 ARG FREEBSD_ARCH=amd64
 ARG PACKAGES="python311 py311-pip py311-setuptools py311-sqlite3 git-lite ca_root_nss"
+ARG UPSTREAM_URL="https://api.github.com/repos/Tautulli/Tautulli/releases/latest"
+ARG UPSTREAM_SED="s/.*\"tag_name\":\"\\([^\"]*\\)\".*/\\1/p"
 
 LABEL org.opencontainers.image.title="Tautulli" \
     org.opencontainers.image.description="Tautulli Plex monitoring on FreeBSD" \
@@ -18,8 +20,8 @@ LABEL org.opencontainers.image.title="Tautulli" \
     io.daemonless.port="8181" \
     io.daemonless.arch="${FREEBSD_ARCH}" \
     io.daemonless.category="Media Servers" \
-    io.daemonless.upstream-mode="github" \
-    io.daemonless.upstream-repo="Tautulli/Tautulli" \
+    io.daemonless.upstream-url="${UPSTREAM_URL}" \
+    io.daemonless.upstream-sed="${UPSTREAM_SED}" \
     io.daemonless.packages="${PACKAGES}"
 
 # Install dependencies (py311-setuptools provides pkg_resources for bundled apscheduler)
@@ -33,8 +35,8 @@ RUN pkg update && \
 # Download and install Tautulli
 RUN mkdir -p /app/tautulli && \
     chmod 755 /app && \
-    TAUTULLI_VERSION=$(fetch -qo - "https://api.github.com/repos/Tautulli/Tautulli/releases/latest" | \
-    grep -o '"tag_name":"[^"]*"' | sed 's/"tag_name":"//;s/"//') && \
+    TAUTULLI_VERSION=$(fetch -qo - "${UPSTREAM_URL}" | \
+    sed -n "${UPSTREAM_SED}" | head -1) && \
     echo "Downloading Tautulli ${TAUTULLI_VERSION}" && \
     fetch -qo - "https://github.com/Tautulli/Tautulli/archive/refs/tags/${TAUTULLI_VERSION}.tar.gz" | \
     tar xzf - -C /app/tautulli --strip-components=1 && \

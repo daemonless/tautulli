@@ -8,6 +8,9 @@ ARG FREEBSD_ARCH=amd64
 ARG PACKAGES="python311 py311-pip py311-setuptools py311-sqlite3 git-lite ca_root_nss"
 ARG UPSTREAM_URL="https://api.github.com/repos/Tautulli/Tautulli/releases/latest"
 ARG UPSTREAM_JQ=".tag_name"
+ARG HEALTHCHECK_ENDPOINT="http://localhost:8181/status"
+
+ENV HEALTHCHECK_URL="${HEALTHCHECK_ENDPOINT}"
 
 LABEL org.opencontainers.image.title="Tautulli" \
     org.opencontainers.image.description="Tautulli Plex monitoring on FreeBSD" \
@@ -22,6 +25,7 @@ LABEL org.opencontainers.image.title="Tautulli" \
     io.daemonless.category="Media Servers" \
     io.daemonless.upstream-url="${UPSTREAM_URL}" \
     io.daemonless.upstream-jq="${UPSTREAM_JQ}" \
+    io.daemonless.healthcheck-url="${HEALTHCHECK_ENDPOINT}" \
     io.daemonless.packages="${PACKAGES}"
 
 # Install dependencies (py311-setuptools provides pkg_resources for bundled apscheduler)
@@ -51,7 +55,7 @@ RUN mkdir -p /config && \
 COPY root/ /
 
 # Make scripts executable
-RUN chmod +x /healthz /etc/services.d/tautulli/run /etc/cont-init.d/* 2>/dev/null || true
+RUN chmod +x /etc/services.d/tautulli/run /etc/cont-init.d/* 2>/dev/null || true
 
 # Set up s6 service link
 

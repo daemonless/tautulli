@@ -1,4 +1,0 @@
-#!/bin/sh
-# Healthcheck for Tautulli
-TIMEOUT="${HEALTHCHECK_TIMEOUT:-5}"
-exec fetch -qo /dev/null -T "$TIMEOUT" http://localhost:8181/status

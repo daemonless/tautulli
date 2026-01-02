@@ -6,6 +6,9 @@ PGID=${PGID:-1000}
 
 echo "[tautulli] Setting up tautulli user with PUID=$PUID PGID=$PGID"
 
+# Only run if manual install version exists
+[ -d /app/tautulli ] || exit 0
+
 # Modify tautulli user/group to match requested UID/GID
 pw groupmod tautulli -g "$PGID" 2>/dev/null || true
 

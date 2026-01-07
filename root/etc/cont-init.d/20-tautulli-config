@@ -12,6 +12,15 @@ echo "[tautulli] Setting up tautulli user with PUID=$PUID PGID=$PGID"
 # Modify tautulli user/group to match requested UID/GID
 pw groupmod tautulli -g "$PGID" 2>/dev/null || true
 
+# Create default config if not exists (disable GitHub check for containers without network)
+if [ ! -f /config/config.ini ]; then
+    echo "[tautulli] Creating default config.ini"
+    cat > /config/config.ini << 'EOF'
+[General]
+check_github_on_startup = 0
+EOF
+fi
+
 # Ensure directories have correct ownership
 chown -R bsd:bsd /config /app/tautulli
 

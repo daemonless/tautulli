@@ -2,11 +2,7 @@
 # Tautulli s6 service
 
 export HOME=/config
-
-export PATH="/usr/local/bin:/usr/bin:/bin"
-
-# Signal readiness when the port is responsive
-s6-ready-when fetch -qo /dev/null http://localhost:8181/
+export TAUTULLI_DOCKER=True
 
 cd /app/tautulli
-exec /usr/local/bin/s6-setuidgid bsd /usr/local/bin/python3 /app/tautulli/Tautulli.py --datadir /config --nolaunch
+exec /usr/local/bin/s6-setuidgid bsd /usr/local/bin/python3.11 Tautulli.py --nolaunch --datadir /config

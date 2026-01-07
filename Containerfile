@@ -58,6 +58,8 @@ COPY root/ /
 RUN chmod +x /etc/services.d/tautulli/run /etc/cont-init.d/* 2>/dev/null || true
 
 # Set up s6 service link
+RUN mkdir -p /run/s6/services/tautulli && \
+    ln -sf /etc/services.d/tautulli/run /run/s6/services/tautulli/run
 
 EXPOSE 8181
 VOLUME /config

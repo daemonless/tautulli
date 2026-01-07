@@ -3,3 +3,4 @@ cit:
   mode: screenshot
   port: 8181
   health: /status
+  wait: 60

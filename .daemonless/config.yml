@@ -1,0 +1,5 @@
+icon: ':simple-plex:'
+cit:
+  mode: screenshot
+  port: 8181
+  health: /status

@@ -4,6 +4,9 @@
 export HOME=/config
 export TAUTULLI_DOCKER=True
 export PATH="/usr/local/bin:/usr/bin:/bin"
+export PYTHONDONTWRITEBYTECODE=1
+export LC_ALL=C.UTF-8
+export LANG=C.UTF-8
 
 cd /app/tautulli
 exec /usr/local/bin/s6-setuidgid bsd /usr/local/bin/python3.11 Tautulli.py --nolaunch --datadir /config

@@ -1,0 +1,41 @@
+name: tautulli
+
+x-daemonless:
+  title: "Tautulli"
+  icon: ":simple-plex:"
+  category: "Media Servers"
+  description: "Tautulli Plex monitoring on FreeBSD."
+  upstream_url: "https://github.com/Tautulli/Tautulli"
+  web_url: "https://tautulli.com/"
+  freshports_url: "https://www.freshports.org/multimedia/tautulli/"
+  user: "bsd"
+  mlock: false
+  
+  docs:
+    env:
+      PUID: "User ID for the application process"
+      PGID: "Group ID for the application process"
+      TZ: "Timezone for the container"
+      TAUTULLI_DOCKER: "Disable internal updater (True/False)"
+    volumes:
+      /config: "Configuration directory"
+    ports:
+      8181: "Web UI"
+
+services:
+  tautulli:
+    image: ghcr.io/daemonless/tautulli:latest
+    container_name: tautulli
+    restart: unless-stopped
+    
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+      - TAUTULLI_DOCKER=True
+
+    volumes:
+      - /path/to/containers/tautulli:/config
+
+    ports:
+      - 8181:8181

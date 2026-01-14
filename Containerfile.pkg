@@ -23,7 +23,6 @@ LABEL org.opencontainers.image.title="Tautulli" \
       io.daemonless.arch="${FREEBSD_ARCH}"
 
 # Install from FreeBSD packages
-# Note: py311-setuptools is a missing dependency in the port (provides pkg_resources)
 RUN pkg update && \
     pkg install -y ${PKG_NAME} py311-setuptools && \
     TAUTULLI_VERSION=$(pkg info ${PKG_NAME} | sed -n 's/.*Version.*: *//p') && \

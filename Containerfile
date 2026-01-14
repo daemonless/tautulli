@@ -5,7 +5,7 @@ FROM ghcr.io/daemonless/base:${BASE_VERSION}
 ENV TAUTULLI_DOCKER=True
 
 ARG FREEBSD_ARCH=amd64
-ARG PACKAGES="python3 python311 py311-pip py311-setuptools py311-sqlite3 py311-pyopenssl git-lite ca_root_nss jq"
+ARG PACKAGES="python3 python311 py311-pip py311-setuptools py311-sqlite3 py311-pyopenssl git-lite ca_root_nss"
 ARG UPSTREAM_URL="https://api.github.com/repos/Tautulli/Tautulli/releases/latest"
 ARG UPSTREAM_JQ=".tag_name"
 ARG HEALTHCHECK_ENDPOINT="http://localhost:8181/status"

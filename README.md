@@ -54,9 +54,9 @@ Access at: `http://localhost:8181`
     state: started
     restart_policy: always
     env:
-      PUID: "1000"
-      PGID: "1000"
-      TZ: "UTC"
+      PUID: "@PUID@"
+      PGID: "@PGID@"
+      TZ: "@TZ@"
       TAUTULLI_DOCKER: "True"
     ports:
       - "8181:8181"
@@ -65,7 +65,6 @@ Access at: `http://localhost:8181`
 ```
 
 ## Configuration
-
 ### Environment Variables
 
 | Variable | Default | Description |
@@ -74,13 +73,11 @@ Access at: `http://localhost:8181`
 | `PGID` | `1000` | Group ID for the application process |
 | `TZ` | `UTC` | Timezone for the container |
 | `TAUTULLI_DOCKER` | `True` | Disable internal updater (True/False) |
-
 ### Volumes
 
 | Path | Description |
 |------|-------------|
 | `/config` | Configuration directory |
-
 ### Ports
 
 | Port | Protocol | Description |

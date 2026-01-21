@@ -11,6 +11,7 @@ Tautulli Plex monitoring on FreeBSD.
 |---|---|
 | **Port** | 8181 |
 | **Registry** | `ghcr.io/daemonless/tautulli` |
+| **Docs** | [daemonless.io/images/tautulli](https://daemonless.io/images/tautulli/) |
 | **Source** | [https://github.com/Tautulli/Tautulli](https://github.com/Tautulli/Tautulli) |
 | **Website** | [https://tautulli.com/](https://tautulli.com/) |
 

@@ -1,11 +1,11 @@
 {
   "image": "tautulli",
-  "generated": "2026-02-01T22:52:47Z",
+  "generated": "2026-02-02T13:53:50Z",
   "tags": {
     "latest": {
       "app_version": "v2.16.0",
       "source": "upstream-binary",
-      "generated": "2026-02-01T22:52:30Z",
+      "generated": "2026-02-02T13:50:28Z",
       "packages": {
         "freebsd": [
           {
@@ -286,7 +286,7 @@
     "pkg-latest": {
       "app_version": "2.16.0_1",
       "source": "freebsd-latest",
-      "generated": "2026-02-01T22:35:00Z",
+      "generated": "2026-02-02T13:52:39Z",
       "packages": {
         "freebsd": [
           {
@@ -523,7 +523,7 @@
     "pkg": {
       "app_version": "2.16.0_1",
       "source": "freebsd-quarterly",
-      "generated": "2026-02-01T22:52:34Z",
+      "generated": "2026-02-02T13:53:37Z",
       "packages": {
         "freebsd": [
           {

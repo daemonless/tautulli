@@ -1,11 +1,12 @@
 {
   "image": "tautulli",
-  "generated": "2026-02-02T13:53:50Z",
+  "generated": "2026-02-06T00:31:25Z",
   "tags": {
     "latest": {
+      "arch": "amd64",
       "app_version": "v2.16.0",
       "source": "upstream-binary",
-      "generated": "2026-02-02T13:50:28Z",
+      "generated": "2026-02-06T00:27:25Z",
       "packages": {
         "freebsd": [
           {
@@ -270,23 +271,65 @@
           }
         ],
         "dotnet": [],
-        "python": [],
+        "python": [
+          {
+            "name": "cffi",
+            "version": "1.17.1"
+          },
+          {
+            "name": "cryptography",
+            "version": "45.0.7"
+          },
+          {
+            "name": "example",
+            "version": "21.12"
+          },
+          {
+            "name": "html5lib",
+            "version": "1.1"
+          },
+          {
+            "name": "pip",
+            "version": "23.3.2"
+          },
+          {
+            "name": "pycparser",
+            "version": "2.23"
+          },
+          {
+            "name": "pyopenssl",
+            "version": "25.3.0"
+          },
+          {
+            "name": "setuptools",
+            "version": "63.1.0"
+          },
+          {
+            "name": "sqlite3",
+            "version": "3.11.14"
+          },
+          {
+            "name": "typing_extensions",
+            "version": "4.15.0"
+          }
+        ],
         "node": [],
         "go": []
       },
       "summary": {
         "freebsd": 65,
         "dotnet": 0,
-        "python": 0,
+        "python": 10,
         "node": 0,
         "go": 0,
-        "total": 65
+        "total": 75
       }
     },
     "pkg-latest": {
+      "arch": "amd64",
       "app_version": "2.16.0_1",
       "source": "freebsd-latest",
-      "generated": "2026-02-02T13:52:39Z",
+      "generated": "2026-02-06T00:31:12Z",
       "packages": {
         "freebsd": [
           {
@@ -507,23 +550,65 @@
           }
         ],
         "dotnet": [],
-        "python": [],
+        "python": [
+          {
+            "name": "cffi",
+            "version": "2.0.0"
+          },
+          {
+            "name": "cryptography",
+            "version": "46.0.3"
+          },
+          {
+            "name": "example",
+            "version": "21.12"
+          },
+          {
+            "name": "html5lib",
+            "version": "1.1"
+          },
+          {
+            "name": "pycparser",
+            "version": "2.23"
+          },
+          {
+            "name": "pycryptodomex",
+            "version": "3.23.0"
+          },
+          {
+            "name": "pyopenssl",
+            "version": "25.3.0"
+          },
+          {
+            "name": "setuptools",
+            "version": "63.1.0"
+          },
+          {
+            "name": "sqlite3",
+            "version": "3.11.14"
+          },
+          {
+            "name": "typing_extensions",
+            "version": "4.15.0"
+          }
+        ],
         "node": [],
         "go": []
       },
       "summary": {
         "freebsd": 54,
         "dotnet": 0,
-        "python": 0,
+        "python": 10,
         "node": 0,
         "go": 0,
-        "total": 54
+        "total": 64
       }
     },
     "pkg": {
+      "arch": "amd64",
       "app_version": "2.16.0_1",
       "source": "freebsd-quarterly",
-      "generated": "2026-02-02T13:53:37Z",
+      "generated": "2026-02-06T00:21:11Z",
       "packages": {
         "freebsd": [
           {
@@ -744,17 +829,58 @@
           }
         ],
         "dotnet": [],
-        "python": [],
+        "python": [
+          {
+            "name": "cffi",
+            "version": "1.17.1"
+          },
+          {
+            "name": "cryptography",
+            "version": "45.0.7"
+          },
+          {
+            "name": "example",
+            "version": "21.12"
+          },
+          {
+            "name": "html5lib",
+            "version": "1.1"
+          },
+          {
+            "name": "pycparser",
+            "version": "2.23"
+          },
+          {
+            "name": "pycryptodomex",
+            "version": "3.23.0"
+          },
+          {
+            "name": "pyopenssl",
+            "version": "25.3.0"
+          },
+          {
+            "name": "setuptools",
+            "version": "63.1.0"
+          },
+          {
+            "name": "sqlite3",
+            "version": "3.11.14"
+          },
+          {
+            "name": "typing_extensions",
+            "version": "4.15.0"
+          }
+        ],
         "node": [],
         "go": []
       },
       "summary": {
         "freebsd": 54,
         "dotnet": 0,
-        "python": 0,
+        "python": 10,
         "node": 0,
         "go": 0,
-        "total": 54
+        "total": 64
       }
     }
   }

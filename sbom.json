@@ -1,12 +1,12 @@
 {
   "image": "tautulli",
-  "generated": "2026-02-06T00:31:25Z",
+  "generated": "2026-02-13T12:25:12Z",
   "tags": {
     "latest": {
       "arch": "amd64",
       "app_version": "v2.16.0",
-      "source": "upstream-binary",
-      "generated": "2026-02-06T00:27:25Z",
+      "source": "upstream",
+      "generated": "2026-02-13T12:24:55Z",
       "packages": {
         "freebsd": [
           {
@@ -15,7 +15,7 @@
           },
           {
             "name": "FreeBSD-blocklist",
-            "version": "15.0"
+            "version": "15.0p3"
           },
           {
             "name": "FreeBSD-bzip2-lib",
@@ -243,7 +243,7 @@
           },
           {
             "name": "python311",
-            "version": "3.11.14_1"
+            "version": "3.11.14_2"
           },
           {
             "name": "readline",
@@ -271,6 +271,10 @@
           }
         ],
         "dotnet": [],
+        "go": [],
+        "java": [],
+        "node": [],
+        "php": [],
         "python": [
           {
             "name": "cffi",
@@ -313,302 +317,27 @@
             "version": "4.15.0"
           }
         ],
-        "node": [],
-        "go": []
+        "ruby": [],
+        "rust": []
       },
       "summary": {
         "freebsd": 65,
         "dotnet": 0,
-        "python": 10,
-        "node": 0,
         "go": 0,
+        "java": 0,
+        "node": 0,
+        "php": 0,
+        "python": 10,
+        "ruby": 0,
+        "rust": 0,
         "total": 75
-      }
-    },
-    "pkg-latest": {
-      "arch": "amd64",
-      "app_version": "2.16.0_1",
-      "source": "freebsd-latest",
-      "generated": "2026-02-06T00:31:12Z",
-      "packages": {
-        "freebsd": [
-          {
-            "name": "FreeBSD-audit-lib",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-blocklist",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-bzip2-lib",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-certctl",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-clibs",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-ctf-lib",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-fetch",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-kerberos-lib",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-libarchive",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-libbsdstat",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-libcasper",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-libexecinfo",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-libldns",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-libmagic",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-libucl",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-mtree",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-ncurses-lib",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-openssl",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-openssl-lib",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-pkg-bootstrap",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-rc",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-runtime",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-tcpd",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-ufs-lib",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-utilities",
-            "version": "15.0p1"
-          },
-          {
-            "name": "FreeBSD-xz-lib",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-zfs-lib",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-zlib",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-zoneinfo",
-            "version": "15.0"
-          },
-          {
-            "name": "ca_root_nss",
-            "version": "3.117_2"
-          },
-          {
-            "name": "execline",
-            "version": "2.9.7.0"
-          },
-          {
-            "name": "gettext-runtime",
-            "version": "0.26"
-          },
-          {
-            "name": "indexinfo",
-            "version": "0.3.1_1"
-          },
-          {
-            "name": "jq",
-            "version": "1.8.1"
-          },
-          {
-            "name": "libedit",
-            "version": "3.1.20251016_1,1"
-          },
-          {
-            "name": "libffi",
-            "version": "3.5.1"
-          },
-          {
-            "name": "mpdecimal",
-            "version": "4.0.1"
-          },
-          {
-            "name": "oniguruma",
-            "version": "6.9.10"
-          },
-          {
-            "name": "pkg",
-            "version": "2.5.1"
-          },
-          {
-            "name": "py311-cffi",
-            "version": "2.0.0"
-          },
-          {
-            "name": "py311-cryptography",
-            "version": "46.0.3_1,1"
-          },
-          {
-            "name": "py311-pycparser",
-            "version": "2.23"
-          },
-          {
-            "name": "py311-pycryptodomex",
-            "version": "3.23.0"
-          },
-          {
-            "name": "py311-pyopenssl",
-            "version": "25.3.0_1,1"
-          },
-          {
-            "name": "py311-setuptools",
-            "version": "63.1.0_3"
-          },
-          {
-            "name": "py311-sqlite3",
-            "version": "3.11.14_10"
-          },
-          {
-            "name": "py311-typing-extensions",
-            "version": "4.15.0"
-          },
-          {
-            "name": "python311",
-            "version": "3.11.14_1"
-          },
-          {
-            "name": "readline",
-            "version": "8.3.3"
-          },
-          {
-            "name": "s6",
-            "version": "2.13.2.0"
-          },
-          {
-            "name": "s6-rc",
-            "version": "0.5.6.0"
-          },
-          {
-            "name": "skalibs",
-            "version": "2.14.4.0"
-          },
-          {
-            "name": "sqlite3",
-            "version": "3.50.4_2,1"
-          },
-          {
-            "name": "tautulli",
-            "version": "2.16.0_1"
-          }
-        ],
-        "dotnet": [],
-        "python": [
-          {
-            "name": "cffi",
-            "version": "2.0.0"
-          },
-          {
-            "name": "cryptography",
-            "version": "46.0.3"
-          },
-          {
-            "name": "example",
-            "version": "21.12"
-          },
-          {
-            "name": "html5lib",
-            "version": "1.1"
-          },
-          {
-            "name": "pycparser",
-            "version": "2.23"
-          },
-          {
-            "name": "pycryptodomex",
-            "version": "3.23.0"
-          },
-          {
-            "name": "pyopenssl",
-            "version": "25.3.0"
-          },
-          {
-            "name": "setuptools",
-            "version": "63.1.0"
-          },
-          {
-            "name": "sqlite3",
-            "version": "3.11.14"
-          },
-          {
-            "name": "typing_extensions",
-            "version": "4.15.0"
-          }
-        ],
-        "node": [],
-        "go": []
-      },
-      "summary": {
-        "freebsd": 54,
-        "dotnet": 0,
-        "python": 10,
-        "node": 0,
-        "go": 0,
-        "total": 64
       }
     },
     "pkg": {
       "arch": "amd64",
       "app_version": "2.16.0_1",
-      "source": "freebsd-quarterly",
-      "generated": "2026-02-06T00:21:11Z",
+      "source": "pkg",
+      "generated": "2026-02-13T12:24:28Z",
       "packages": {
         "freebsd": [
           {
@@ -617,7 +346,7 @@
           },
           {
             "name": "FreeBSD-blocklist",
-            "version": "15.0"
+            "version": "15.0p3"
           },
           {
             "name": "FreeBSD-bzip2-lib",
@@ -801,7 +530,7 @@
           },
           {
             "name": "python311",
-            "version": "3.11.14_1"
+            "version": "3.11.14_2"
           },
           {
             "name": "readline",
@@ -829,6 +558,10 @@
           }
         ],
         "dotnet": [],
+        "go": [],
+        "java": [],
+        "node": [],
+        "php": [],
         "python": [
           {
             "name": "cffi",
@@ -871,15 +604,19 @@
             "version": "4.15.0"
           }
         ],
-        "node": [],
-        "go": []
+        "ruby": [],
+        "rust": []
       },
       "summary": {
         "freebsd": 54,
         "dotnet": 0,
-        "python": 10,
-        "node": 0,
         "go": 0,
+        "java": 0,
+        "node": 0,
+        "php": 0,
+        "python": 10,
+        "ruby": 0,
+        "rust": 0,
         "total": 64
       }
     }

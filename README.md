@@ -5,15 +5,29 @@ Source: dbuild templates
 
 # Tautulli
 
-Tautulli Plex monitoring on FreeBSD.
+[![Build Status](https://img.shields.io/github/actions/workflow/status/daemonless/tautulli/build.yaml?style=flat-square&label=Build&color=green)](https://github.com/daemonless/tautulli/actions)
+[![Last Commit](https://img.shields.io/github/last-commit/daemonless/tautulli?style=flat-square&label=Last+Commit&color=blue)](https://github.com/daemonless/tautulli/commits)
+
+Monitoring and tracking tool for Plex Media Server — tracks what is being watched, who is watching, and when.
 
 | | |
 |---|---|
 | **Port** | 8181 |
 | **Registry** | `ghcr.io/daemonless/tautulli` |
-| **Docs** | [daemonless.io/images/tautulli](https://daemonless.io/images/tautulli/) |
 | **Source** | [https://github.com/Tautulli/Tautulli](https://github.com/Tautulli/Tautulli) |
 | **Website** | [https://tautulli.com/](https://tautulli.com/) |
+
+## Version Tags
+
+| Tag | Description | Best For |
+| :--- | :--- | :--- |
+| `latest` | **Upstream Binary**. Built from official release. | Most users. Matches Linux Docker behavior. |
+| `pkg` | **FreeBSD Quarterly**. Uses stable, tested packages. | Production stability. |
+| `pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
+
+## Prerequisites
+
+Before deploying, ensure your host environment is ready. See the [Quick Start Guide](https://daemonless.io/guides/quick-start) for host setup instructions.
 
 ## Deployment
 
@@ -30,10 +44,56 @@ services:
       - TZ=UTC
       - TAUTULLI_DOCKER=True
     volumes:
-      - /path/to/containers/tautulli:/config
+      - "/path/to/containers/tautulli:/config"
     ports:
       - 8181:8181
     restart: unless-stopped
+```
+
+### AppJail Director
+
+**.env**:
+
+```
+DIRECTOR_PROJECT=tautulli
+PUID=1000
+PGID=1000
+TZ=UTC
+TAUTULLI_DOCKER=True
+```
+
+**appjail-director.yml**:
+
+```yaml
+options:
+  - virtualnet: ':<random> default'
+  - nat:
+services:
+  tautulli:
+    name: tautulli
+    options:
+      - container: 'boot args:--pull'
+    oci:
+      user: root
+      environment:
+        - PUID: !ENV '${PUID}'
+        - PGID: !ENV '${PGID}'
+        - TZ: !ENV '${TZ}'
+        - TAUTULLI_DOCKER: !ENV '${TAUTULLI_DOCKER}'
+    volumes:
+      - tautulli: /config
+volumes:
+  tautulli:
+    device: '/path/to/containers/tautulli'
+```
+
+**Makejail**:
+
+```
+ARG tag=latest
+
+OPTION overwrite=force
+OPTION from=ghcr.io/daemonless/tautulli:${tag}
 ```
 
 ### Podman CLI
@@ -41,14 +101,13 @@ services:
 ```bash
 podman run -d --name tautulli \
   -p 8181:8181 \
-  -e PUID=@PUID@ \
-  -e PGID=@PGID@ \
-  -e TZ=@TZ@ \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=UTC \
   -e TAUTULLI_DOCKER=True \
   -v /path/to/containers/tautulli:/config \
   ghcr.io/daemonless/tautulli:latest
 ```
-Access at: `http://localhost:8181`
 
 ### Ansible
 
@@ -60,9 +119,9 @@ Access at: `http://localhost:8181`
     state: started
     restart_policy: always
     env:
-      PUID: "@PUID@"
-      PGID: "@PGID@"
-      TZ: "@TZ@"
+      PUID: "1000"
+      PGID: "1000"
+      TZ: "UTC"
       TAUTULLI_DOCKER: "True"
     ports:
       - "8181:8181"
@@ -70,7 +129,10 @@ Access at: `http://localhost:8181`
       - "/path/to/containers/tautulli:/config"
 ```
 
-## Configuration
+Access at: `http://localhost:8181`
+
+## Parameters
+
 ### Environment Variables
 
 | Variable | Default | Description |
@@ -79,19 +141,23 @@ Access at: `http://localhost:8181`
 | `PGID` | `1000` | Group ID for the application process |
 | `TZ` | `UTC` | Timezone for the container |
 | `TAUTULLI_DOCKER` | `True` | Disable internal updater (True/False) |
+
 ### Volumes
 
 | Path | Description |
 |------|-------------|
 | `/config` | Configuration directory |
+
 ### Ports
 
 | Port | Protocol | Description |
 |------|----------|-------------|
 | `8181` | TCP | Web UI |
 
-## Notes
+**Architectures:** amd64
+**User:** `bsd` (UID/GID via PUID/PGID, defaults to 1000:1000)
+**Base:** FreeBSD 15.0
 
-- **Architectures:** amd64
-- **User:** `bsd` (UID/GID set via PUID/PGID)
-- **Base:** Built on `ghcr.io/daemonless/base` (FreeBSD)
+---
+
+Need help? Join our [Discord](https://discord.gg/Kb9tkhecZT) community.

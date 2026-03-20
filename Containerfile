@@ -20,7 +20,7 @@ ENV HEALTHCHECK_URL="${HEALTHCHECK_ENDPOINT}"
 
 # --- Metadata (Injected by Generator) ---
 LABEL org.opencontainers.image.title="Tautulli" \
-      org.opencontainers.image.description="Tautulli Plex monitoring on FreeBSD." \
+      org.opencontainers.image.description="Monitoring and tracking tool for Plex Media Server — tracks what is being watched, who is watching, and when." \
       org.opencontainers.image.source="https://github.com/daemonless/tautulli" \
       org.opencontainers.image.url="https://tautulli.com/" \
       org.opencontainers.image.documentation="https://github.com/Tautulli/Tautulli/wiki" \

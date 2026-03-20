@@ -4,13 +4,14 @@ x-daemonless:
   title: "Tautulli"
   icon: ":simple-plex:"
   category: "Media Servers"
-  description: "Tautulli Plex monitoring on FreeBSD."
+  description: "Monitoring and tracking tool for Plex Media Server — tracks what is being watched, who is watching, and when."
   upstream_url: "https://github.com/Tautulli/Tautulli"
   web_url: "https://tautulli.com/"
   freshports_url: "https://www.freshports.org/multimedia/tautulli/"
   user: "bsd"
   mlock: false
-  
+  appjail: true
+
   docs:
     env:
       PUID: "User ID for the application process"

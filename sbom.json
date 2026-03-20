@@ -1,12 +1,12 @@
 {
   "image": "tautulli",
-  "generated": "2026-03-04T09:28:35Z",
+  "generated": "2026-03-20T10:59:17Z",
   "tags": {
     "latest": {
       "arch": "amd64",
       "app_version": "v2.16.1",
       "source": "upstream",
-      "generated": "2026-03-04T09:28:19Z",
+      "generated": "2026-03-20T10:59:00Z",
       "packages": {
         "freebsd": [
           {
@@ -143,7 +143,7 @@
           },
           {
             "name": "expat",
-            "version": "2.7.3"
+            "version": "2.7.4"
           },
           {
             "name": "gettext-runtime",
@@ -231,7 +231,7 @@
           },
           {
             "name": "py311-sqlite3",
-            "version": "3.11.14_10"
+            "version": "3.11.15_10"
           },
           {
             "name": "py311-typing-extensions",
@@ -243,7 +243,7 @@
           },
           {
             "name": "python311",
-            "version": "3.11.14_2"
+            "version": "3.11.15"
           },
           {
             "name": "readline",
@@ -310,7 +310,7 @@
           },
           {
             "name": "sqlite3",
-            "version": "3.11.14"
+            "version": "3.11.15"
           },
           {
             "name": "typing_extensions",
@@ -337,7 +337,7 @@
       "arch": "amd64",
       "app_version": "2.16.0_1",
       "source": "pkg",
-      "generated": "2026-03-04T09:27:44Z",
+      "generated": "2026-03-20T10:59:00Z",
       "packages": {
         "freebsd": [
           {
@@ -462,7 +462,7 @@
           },
           {
             "name": "execline",
-            "version": "2.9.7.0"
+            "version": "2.9.8.1"
           },
           {
             "name": "gettext-runtime",
@@ -494,7 +494,7 @@
           },
           {
             "name": "pkg",
-            "version": "2.6.0"
+            "version": "2.6.2_1"
           },
           {
             "name": "py311-cffi",
@@ -502,7 +502,7 @@
           },
           {
             "name": "py311-cryptography",
-            "version": "46.0.4,1"
+            "version": "46.0.5,1"
           },
           {
             "name": "py311-pycparser",
@@ -522,7 +522,7 @@
           },
           {
             "name": "py311-sqlite3",
-            "version": "3.11.14_10"
+            "version": "3.11.15_10"
           },
           {
             "name": "py311-typing-extensions",
@@ -530,7 +530,7 @@
           },
           {
             "name": "python311",
-            "version": "3.11.14_2"
+            "version": "3.11.15"
           },
           {
             "name": "readline",
@@ -538,15 +538,15 @@
           },
           {
             "name": "s6",
-            "version": "2.13.2.0"
+            "version": "2.14.0.1"
           },
           {
             "name": "s6-rc",
-            "version": "0.5.6.0"
+            "version": "0.6.0.0"
           },
           {
             "name": "skalibs",
-            "version": "2.14.4.0"
+            "version": "2.14.5.1"
           },
           {
             "name": "sqlite3",
@@ -569,7 +569,7 @@
           },
           {
             "name": "cryptography",
-            "version": "46.0.4"
+            "version": "46.0.5"
           },
           {
             "name": "example",
@@ -597,7 +597,7 @@
           },
           {
             "name": "sqlite3",
-            "version": "3.11.14"
+            "version": "3.11.15"
           },
           {
             "name": "typing_extensions",
@@ -624,7 +624,7 @@
       "arch": "amd64",
       "app_version": "2.16.0_1",
       "source": "pkg",
-      "generated": "2026-03-04T09:26:51Z",
+      "generated": "2026-03-20T10:58:15Z",
       "packages": {
         "freebsd": [
           {
@@ -809,7 +809,7 @@
           },
           {
             "name": "py311-sqlite3",
-            "version": "3.11.14_10"
+            "version": "3.11.15_10"
           },
           {
             "name": "py311-typing-extensions",
@@ -817,7 +817,7 @@
           },
           {
             "name": "python311",
-            "version": "3.11.14_2"
+            "version": "3.11.15"
           },
           {
             "name": "readline",
@@ -884,7 +884,7 @@
           },
           {
             "name": "sqlite3",
-            "version": "3.11.14"
+            "version": "3.11.15"
           },
           {
             "name": "typing_extensions",

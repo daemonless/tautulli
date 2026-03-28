@@ -1,12 +1,12 @@
 {
   "image": "tautulli",
-  "generated": "2026-03-20T10:59:17Z",
+  "generated": "2026-03-28T06:46:00Z",
   "tags": {
     "latest": {
       "arch": "amd64",
-      "app_version": "v2.16.1",
+      "app_version": "v2.17.0",
       "source": "upstream",
-      "generated": "2026-03-20T10:59:00Z",
+      "generated": "2026-03-28T06:45:41Z",
       "packages": {
         "freebsd": [
           {
@@ -337,7 +337,7 @@
       "arch": "amd64",
       "app_version": "2.16.0_1",
       "source": "pkg",
-      "generated": "2026-03-20T10:59:00Z",
+      "generated": "2026-03-28T06:45:47Z",
       "packages": {
         "freebsd": [
           {
@@ -502,7 +502,7 @@
           },
           {
             "name": "py311-cryptography",
-            "version": "46.0.5,1"
+            "version": "46.0.5_1,1"
           },
           {
             "name": "py311-pycparser",
@@ -624,7 +624,7 @@
       "arch": "amd64",
       "app_version": "2.16.0_1",
       "source": "pkg",
-      "generated": "2026-03-20T10:58:15Z",
+      "generated": "2026-03-28T06:45:31Z",
       "packages": {
         "freebsd": [
           {

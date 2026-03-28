@@ -10,6 +10,7 @@ Source: dbuild templates
 
 Monitoring and tracking tool for Plex Media Server — tracks what is being watched, who is watching, and when.
 
+
 | | |
 |---|---|
 | **Port** | 8181 |

@@ -53,7 +53,8 @@ RUN mkdir -p /app/tautulli && \
     fetch -qo - "https://github.com/Tautulli/Tautulli/archive/refs/tags/${TAUTULLI_VERSION}.tar.gz" | \
     tar xzf - -C /app/tautulli --strip-components=1 && \
     chmod -R o+rX /app/tautulli && \
-    echo "$TAUTULLI_VERSION" > /app/version
+    echo "$TAUTULLI_VERSION" > /app/version && \
+    echo "$TAUTULLI_VERSION" > /app/tautulli/version.txt
 
 # Create config directory
 RUN mkdir -p /config && \

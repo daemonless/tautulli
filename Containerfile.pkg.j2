@@ -34,6 +34,7 @@ RUN pkg update && \
     pkg install -y ${PKG_NAME} py311-setuptools && \
     TAUTULLI_VERSION=$(pkg info ${PKG_NAME} | sed -n 's/.*Version.*: *//p') && \
     mkdir -p /app && echo "$TAUTULLI_VERSION" > /app/version && \
+    echo "$TAUTULLI_VERSION" > /usr/local/www/tautulli/version.txt && \
     pkg clean -ay && \
     rm -rf /var/cache/pkg/* /var/db/pkg/repos/*
 

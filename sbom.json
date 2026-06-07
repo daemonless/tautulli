@@ -1,11 +1,11 @@
 {
-  "generated": "2026-05-28T23:18:31Z",
+  "generated": "2026-06-07T22:09:03Z",
   "image": "tautulli",
   "tags": {
     "latest": {
       "app_version": "v2.17.1",
       "arch": "amd64",
-      "generated": "2026-05-28T23:16:25Z",
+      "generated": "2026-06-07T22:07:47Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -332,7 +332,7 @@
     "pkg": {
       "app_version": "2.16.0_1",
       "arch": "amd64",
-      "generated": "2026-05-28T23:17:19Z",
+      "generated": "2026-06-07T22:07:50Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -615,7 +615,7 @@
     "pkg-latest": {
       "app_version": "2.16.0_1",
       "arch": "amd64",
-      "generated": "2026-05-28T23:16:57Z",
+      "generated": "2026-06-07T22:07:29Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -757,11 +757,11 @@
           },
           {
             "name": "libedit",
-            "version": "3.1.20251016_1,1"
+            "version": "3.1.20260512,1"
           },
           {
             "name": "libffi",
-            "version": "3.5.1"
+            "version": "3.5.2"
           },
           {
             "name": "mpdecimal",
@@ -781,7 +781,7 @@
           },
           {
             "name": "py311-cryptography",
-            "version": "48.0.0,1"
+            "version": "48.0.0_1,1"
           },
           {
             "name": "py311-pycparser",
@@ -825,7 +825,7 @@
           },
           {
             "name": "sqlite3",
-            "version": "3.50.4_2,1"
+            "version": "3.53.1,1"
           },
           {
             "name": "tautulli",

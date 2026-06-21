@@ -10,7 +10,6 @@ Source: dbuild templates
 
 Monitoring and tracking tool for Plex Media Server — tracks what is being watched, who is watching, and when.
 
-
 | | |
 |---|---|
 | **Port** | 8181 |
@@ -37,17 +36,17 @@ Before deploying, ensure your host environment is ready. See the [Quick Start Gu
 ```yaml
 services:
   tautulli:
-    image: ghcr.io/daemonless/tautulli:latest
+    image: "ghcr.io/daemonless/tautulli:latest"
     container_name: tautulli
     environment:
-      - PUID=1000
-      - PGID=1000
-      - TZ=UTC
-      - TAUTULLI_DOCKER=True
+      - PUID=1000  # User ID for the application process
+      - PGID=1000  # Group ID for the application process
+      - TZ=UTC  # Timezone for the container
+      - TAUTULLI_DOCKER=True  # Disable internal updater (True/False)
     volumes:
       - "/path/to/containers/tautulli:/config"
     ports:
-      - 8181:8181
+      - "8181:8181"
     restart: unless-stopped
 ```
 
@@ -116,7 +115,7 @@ podman run -d --name tautulli \
 - name: Deploy tautulli
   containers.podman.podman_container:
     name: tautulli
-    image: ghcr.io/daemonless/tautulli:latest
+    image: "ghcr.io/daemonless/tautulli:latest"
     state: started
     restart_policy: always
     env:

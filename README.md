@@ -18,7 +18,6 @@ Monitoring and tracking tool for Plex Media Server — tracks what is being watc
 | **Website** | [https://tautulli.com/](https://tautulli.com/) |
 
 ## Version Tags
-
 | Tag | Description | Best For |
 | :--- | :--- | :--- |
 | `latest` | **Upstream Binary**. Built from official release. | Most users. Matches Linux Docker behavior. |
@@ -26,7 +25,6 @@ Monitoring and tracking tool for Plex Media Server — tracks what is being watc
 | `pkg-latest` | **FreeBSD Latest**. Rolling package updates. | Newest FreeBSD packages. |
 
 ## Prerequisites
-
 Before deploying, ensure your host environment is ready. See the [Quick Start Guide](https://daemonless.io/guides/quick-start) for host setup instructions.
 
 ## Deployment
@@ -51,10 +49,11 @@ services:
 ```
 
 ### AppJail Director
-
 **.env**:
 
 ```
+# .env
+
 DIRECTOR_PROJECT=tautulli
 PUID=1000
 PGID=1000
@@ -65,6 +64,8 @@ TAUTULLI_DOCKER=True
 **appjail-director.yml**:
 
 ```yaml
+# appjail-director.yml
+
 options:
   - virtualnet: ':<random> default'
   - nat:
@@ -73,7 +74,7 @@ services:
     name: tautulli
     options:
       - container: 'boot args:--pull'
-      - expose="8181:8181 proto:tcp" \
+      - expose: '8181:8181 proto:tcp' \
     oci:
       user: root
       environment:
@@ -91,6 +92,8 @@ volumes:
 **Makejail**:
 
 ```
+# Makejail
+
 ARG tag=latest
 
 OPTION overwrite=force

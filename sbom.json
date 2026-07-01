@@ -1,11 +1,11 @@
 {
-  "generated": "2026-06-21T12:25:59Z",
+  "generated": "2026-07-01T15:50:10Z",
   "image": "tautulli",
   "tags": {
     "latest": {
       "app_version": "v2.17.2",
       "arch": "amd64",
-      "generated": "2026-06-21T12:21:06Z",
+      "generated": "2026-07-01T15:48:52Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -155,11 +155,11 @@
           },
           {
             "name": "gettext-runtime",
-            "version": "1.0"
+            "version": "1.0_1"
           },
           {
             "name": "git-lite",
-            "version": "2.53.0"
+            "version": "2.54.0"
           },
           {
             "name": "indexinfo",
@@ -171,19 +171,23 @@
           },
           {
             "name": "libedit",
-            "version": "3.1.20251016_1,1"
+            "version": "3.1.20260512,1"
           },
           {
             "name": "libffi",
-            "version": "3.5.1"
+            "version": "3.6.0"
           },
           {
             "name": "libidn2",
             "version": "2.3.8"
           },
           {
+            "name": "liblz4",
+            "version": "1.10.0_2,1"
+          },
+          {
             "name": "libnghttp2",
-            "version": "1.68.1"
+            "version": "1.69.0"
           },
           {
             "name": "libpsl",
@@ -191,7 +195,7 @@
           },
           {
             "name": "libssh2",
-            "version": "1.11.1,3"
+            "version": "1.11.1_1,3"
           },
           {
             "name": "libunistring",
@@ -211,38 +215,38 @@
           },
           {
             "name": "pkg",
-            "version": "2.6.2_1"
+            "version": "2.7.5"
           },
           {
-            "name": "py311-cffi",
+            "name": "py312-cffi",
             "version": "2.0.0"
           },
           {
-            "name": "py311-cryptography",
-            "version": "46.0.7,1"
+            "name": "py312-cryptography",
+            "version": "48.0.0_1,1"
           },
           {
-            "name": "py311-pip",
+            "name": "py312-pip",
             "version": "23.3.2_4"
           },
           {
-            "name": "py311-pycparser",
+            "name": "py312-pycparser",
             "version": "2.23"
           },
           {
-            "name": "py311-pyopenssl",
-            "version": "26.0.0,1"
+            "name": "py312-pyopenssl",
+            "version": "26.2.0,1"
           },
           {
-            "name": "py311-setuptools",
+            "name": "py312-setuptools",
             "version": "63.1.0_3"
           },
           {
-            "name": "py311-sqlite3",
-            "version": "3.11.15_10"
+            "name": "py312-sqlite3",
+            "version": "3.12.13_10"
           },
           {
-            "name": "py311-typing-extensions",
+            "name": "py312-typing-extensions",
             "version": "4.15.0"
           },
           {
@@ -250,8 +254,8 @@
             "version": "3_4"
           },
           {
-            "name": "python311",
-            "version": "3.11.15_3"
+            "name": "python312",
+            "version": "3.12.13_3"
           },
           {
             "name": "readline",
@@ -267,11 +271,11 @@
           },
           {
             "name": "sqlite3",
-            "version": "3.50.4_2,1"
+            "version": "3.53.1,1"
           },
           {
             "name": "zstd",
-            "version": "1.5.7_1"
+            "version": "1.5.7_2"
           }
         ],
         "go": [],
@@ -285,7 +289,7 @@
           },
           {
             "name": "cryptography",
-            "version": "46.0.7"
+            "version": "48.0.0"
           },
           {
             "name": "example",
@@ -305,7 +309,7 @@
           },
           {
             "name": "pyopenssl",
-            "version": "26.0.0"
+            "version": "26.2.0"
           },
           {
             "name": "setuptools",
@@ -313,7 +317,7 @@
           },
           {
             "name": "sqlite3",
-            "version": "3.11.15"
+            "version": "3.12.13"
           },
           {
             "name": "typing_extensions",
@@ -326,7 +330,7 @@
       "source": "upstream",
       "summary": {
         "dotnet": 0,
-        "freebsd": 66,
+        "freebsd": 67,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -334,13 +338,13 @@
         "python": 10,
         "ruby": 0,
         "rust": 0,
-        "total": 76
+        "total": 77
       }
     },
     "pkg": {
       "app_version": "2.16.0_1",
       "arch": "amd64",
-      "generated": "2026-06-21T12:23:31Z",
+      "generated": "2026-07-01T15:48:20Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -482,293 +486,6 @@
           },
           {
             "name": "gettext-runtime",
-            "version": "1.0"
-          },
-          {
-            "name": "indexinfo",
-            "version": "0.3.1_1"
-          },
-          {
-            "name": "jq",
-            "version": "1.8.1"
-          },
-          {
-            "name": "libedit",
-            "version": "3.1.20251016_1,1"
-          },
-          {
-            "name": "libffi",
-            "version": "3.5.1"
-          },
-          {
-            "name": "mpdecimal",
-            "version": "4.0.1"
-          },
-          {
-            "name": "oniguruma",
-            "version": "6.9.10"
-          },
-          {
-            "name": "pkg",
-            "version": "2.6.2_1"
-          },
-          {
-            "name": "py311-cffi",
-            "version": "2.0.0"
-          },
-          {
-            "name": "py311-cryptography",
-            "version": "46.0.7,1"
-          },
-          {
-            "name": "py311-pycparser",
-            "version": "2.23"
-          },
-          {
-            "name": "py311-pycryptodomex",
-            "version": "3.23.0"
-          },
-          {
-            "name": "py311-pyopenssl",
-            "version": "26.0.0,1"
-          },
-          {
-            "name": "py311-setuptools",
-            "version": "63.1.0_3"
-          },
-          {
-            "name": "py311-sqlite3",
-            "version": "3.11.15_10"
-          },
-          {
-            "name": "py311-typing-extensions",
-            "version": "4.15.0"
-          },
-          {
-            "name": "python311",
-            "version": "3.11.15_3"
-          },
-          {
-            "name": "readline",
-            "version": "8.3.3"
-          },
-          {
-            "name": "s6",
-            "version": "2.14.0.1"
-          },
-          {
-            "name": "skalibs",
-            "version": "2.14.5.1"
-          },
-          {
-            "name": "sqlite3",
-            "version": "3.50.4_2,1"
-          },
-          {
-            "name": "tautulli",
-            "version": "2.16.0_1"
-          }
-        ],
-        "go": [],
-        "java": [],
-        "node": [],
-        "php": [],
-        "python": [
-          {
-            "name": "cffi",
-            "version": "2.0.0"
-          },
-          {
-            "name": "cryptography",
-            "version": "46.0.7"
-          },
-          {
-            "name": "example",
-            "version": "21.12"
-          },
-          {
-            "name": "html5lib",
-            "version": "1.1"
-          },
-          {
-            "name": "pycparser",
-            "version": "2.23"
-          },
-          {
-            "name": "pycryptodomex",
-            "version": "3.23.0"
-          },
-          {
-            "name": "pyopenssl",
-            "version": "26.0.0"
-          },
-          {
-            "name": "setuptools",
-            "version": "63.1.0"
-          },
-          {
-            "name": "sqlite3",
-            "version": "3.11.15"
-          },
-          {
-            "name": "typing_extensions",
-            "version": "4.15.0"
-          }
-        ],
-        "ruby": [],
-        "rust": []
-      },
-      "source": "pkg",
-      "summary": {
-        "dotnet": 0,
-        "freebsd": 56,
-        "go": 0,
-        "java": 0,
-        "node": 0,
-        "php": 0,
-        "python": 10,
-        "ruby": 0,
-        "rust": 0,
-        "total": 66
-      }
-    },
-    "pkg-latest": {
-      "app_version": "2.16.0_1",
-      "arch": "amd64",
-      "generated": "2026-06-21T12:24:48Z",
-      "packages": {
-        "dotnet": [],
-        "freebsd": [
-          {
-            "name": "FreeBSD-audit-lib",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-blocklist",
-            "version": "15.0p3"
-          },
-          {
-            "name": "FreeBSD-bzip2-lib",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-certctl",
-            "version": "15.0p10"
-          },
-          {
-            "name": "FreeBSD-clibs",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-ctf-lib",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-fetch",
-            "version": "15.0p10"
-          },
-          {
-            "name": "FreeBSD-kerberos-lib",
-            "version": "15.0p10"
-          },
-          {
-            "name": "FreeBSD-libarchive",
-            "version": "15.0p10"
-          },
-          {
-            "name": "FreeBSD-libbsdstat",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-libcasper",
-            "version": "15.0p9"
-          },
-          {
-            "name": "FreeBSD-libexecinfo",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-libldns",
-            "version": "15.0p10"
-          },
-          {
-            "name": "FreeBSD-libmagic",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-libucl",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-mtree",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-ncurses-lib",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-openssl",
-            "version": "15.0p10"
-          },
-          {
-            "name": "FreeBSD-openssl-lib",
-            "version": "15.0p10"
-          },
-          {
-            "name": "FreeBSD-pkg-bootstrap",
-            "version": "15.0p10"
-          },
-          {
-            "name": "FreeBSD-rc",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-runtime",
-            "version": "15.0p10"
-          },
-          {
-            "name": "FreeBSD-tcpd",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-ufs-lib",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-utilities",
-            "version": "15.0p10"
-          },
-          {
-            "name": "FreeBSD-xz-lib",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-zfs-lib",
-            "version": "15.0p10"
-          },
-          {
-            "name": "FreeBSD-zlib",
-            "version": "15.0"
-          },
-          {
-            "name": "FreeBSD-zoneinfo",
-            "version": "15.0p7"
-          },
-          {
-            "name": "ca_root_nss",
-            "version": "3.124"
-          },
-          {
-            "name": "execline",
-            "version": "2.9.8.1"
-          },
-          {
-            "name": "expat",
-            "version": "2.8.1"
-          },
-          {
-            "name": "gettext-runtime",
             "version": "1.0_1"
           },
           {
@@ -785,7 +502,7 @@
           },
           {
             "name": "libffi",
-            "version": "3.5.2"
+            "version": "3.6.0"
           },
           {
             "name": "mpdecimal",
@@ -800,40 +517,44 @@
             "version": "2.7.5"
           },
           {
-            "name": "py311-cffi",
+            "name": "py312-cffi",
             "version": "2.0.0"
           },
           {
-            "name": "py311-cryptography",
+            "name": "py312-cryptography",
             "version": "48.0.0_1,1"
           },
           {
-            "name": "py311-pycparser",
+            "name": "py312-pycparser",
             "version": "2.23"
           },
           {
-            "name": "py311-pycryptodomex",
+            "name": "py312-pycryptodomex",
             "version": "3.23.0"
           },
           {
-            "name": "py311-pyopenssl",
+            "name": "py312-pyopenssl",
             "version": "26.2.0,1"
           },
           {
-            "name": "py311-setuptools",
+            "name": "py312-setuptools",
             "version": "63.1.0_3"
           },
           {
-            "name": "py311-sqlite3",
-            "version": "3.11.15_10"
+            "name": "py312-sqlite3",
+            "version": "3.12.13_10"
           },
           {
-            "name": "py311-typing-extensions",
+            "name": "py312-typing-extensions",
             "version": "4.15.0"
           },
           {
-            "name": "python311",
-            "version": "3.11.15_3"
+            "name": "python3",
+            "version": "3_4"
+          },
+          {
+            "name": "python312",
+            "version": "3.12.13_3"
           },
           {
             "name": "readline",
@@ -895,7 +616,7 @@
           },
           {
             "name": "sqlite3",
-            "version": "3.11.15"
+            "version": "3.12.13"
           },
           {
             "name": "typing_extensions",
@@ -908,7 +629,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 54,
+        "freebsd": 57,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -916,7 +637,306 @@
         "python": 10,
         "ruby": 0,
         "rust": 0,
-        "total": 64
+        "total": 67
+      }
+    },
+    "pkg-latest": {
+      "app_version": "2.16.0_1",
+      "arch": "amd64",
+      "generated": "2026-07-01T15:47:40Z",
+      "packages": {
+        "dotnet": [],
+        "freebsd": [
+          {
+            "name": "FreeBSD-audit-lib",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-blocklist",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-bzip2-lib",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-certctl",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-clibs",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-ctf-lib",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-fetch",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-kerberos-lib",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-libarchive",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-libbsdstat",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-libcasper",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-libexecinfo",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-libldns",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-libmagic",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-libucl",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-mtree",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-ncurses-lib",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-openssl",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-openssl-lib",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-pam-lib",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-pkg-bootstrap",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-rc",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-runtime",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-tcpd",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-ufs-lib",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-utilities",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-xz-lib",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-zfs-lib",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-zlib",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-zoneinfo",
+            "version": "15.1"
+          },
+          {
+            "name": "FreeBSD-zstd-lib",
+            "version": "15.1"
+          },
+          {
+            "name": "ca_root_nss",
+            "version": "3.124"
+          },
+          {
+            "name": "execline",
+            "version": "2.9.8.1"
+          },
+          {
+            "name": "expat",
+            "version": "2.8.1"
+          },
+          {
+            "name": "gettext-runtime",
+            "version": "1.0_1"
+          },
+          {
+            "name": "indexinfo",
+            "version": "0.3.1_1"
+          },
+          {
+            "name": "jq",
+            "version": "1.8.1"
+          },
+          {
+            "name": "libedit",
+            "version": "3.1.20260512,1"
+          },
+          {
+            "name": "libffi",
+            "version": "3.6.0"
+          },
+          {
+            "name": "mpdecimal",
+            "version": "4.0.1"
+          },
+          {
+            "name": "oniguruma",
+            "version": "6.9.10"
+          },
+          {
+            "name": "pkg",
+            "version": "2.7.5"
+          },
+          {
+            "name": "py312-cffi",
+            "version": "2.0.0"
+          },
+          {
+            "name": "py312-cryptography",
+            "version": "48.0.0_1,1"
+          },
+          {
+            "name": "py312-pycparser",
+            "version": "2.23"
+          },
+          {
+            "name": "py312-pycryptodomex",
+            "version": "3.23.0"
+          },
+          {
+            "name": "py312-pyopenssl",
+            "version": "26.2.0,1"
+          },
+          {
+            "name": "py312-setuptools",
+            "version": "63.1.0_3"
+          },
+          {
+            "name": "py312-sqlite3",
+            "version": "3.12.13_10"
+          },
+          {
+            "name": "py312-typing-extensions",
+            "version": "4.15.0"
+          },
+          {
+            "name": "python3",
+            "version": "3_4"
+          },
+          {
+            "name": "python312",
+            "version": "3.12.13_3"
+          },
+          {
+            "name": "readline",
+            "version": "8.3.3"
+          },
+          {
+            "name": "s6",
+            "version": "2.14.0.1"
+          },
+          {
+            "name": "skalibs",
+            "version": "2.14.5.1"
+          },
+          {
+            "name": "sqlite3",
+            "version": "3.53.1,1"
+          },
+          {
+            "name": "tautulli",
+            "version": "2.16.0_1"
+          }
+        ],
+        "go": [],
+        "java": [],
+        "node": [],
+        "php": [],
+        "python": [
+          {
+            "name": "cffi",
+            "version": "2.0.0"
+          },
+          {
+            "name": "cryptography",
+            "version": "48.0.0"
+          },
+          {
+            "name": "example",
+            "version": "21.12"
+          },
+          {
+            "name": "html5lib",
+            "version": "1.1"
+          },
+          {
+            "name": "pycparser",
+            "version": "2.23"
+          },
+          {
+            "name": "pycryptodomex",
+            "version": "3.23.0"
+          },
+          {
+            "name": "pyopenssl",
+            "version": "26.2.0"
+          },
+          {
+            "name": "setuptools",
+            "version": "63.1.0"
+          },
+          {
+            "name": "sqlite3",
+            "version": "3.12.13"
+          },
+          {
+            "name": "typing_extensions",
+            "version": "4.15.0"
+          }
+        ],
+        "ruby": [],
+        "rust": []
+      },
+      "source": "pkg",
+      "summary": {
+        "dotnet": 0,
+        "freebsd": 57,
+        "go": 0,
+        "java": 0,
+        "node": 0,
+        "php": 0,
+        "python": 10,
+        "ruby": 0,
+        "rust": 0,
+        "total": 67
       }
     }
   }

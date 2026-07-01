@@ -30,7 +30,7 @@ LABEL org.opencontainers.image.title="Tautulli" \
 
 # Install from FreeBSD packages
 RUN pkg update && \
-    pkg install -y ${PKG_NAME} py312-setuptools && \
+    pkg install -y ${PKG_NAME} python3 py312-setuptools && \
     TAUTULLI_VERSION=$(pkg info ${PKG_NAME} | sed -n 's/.*Version.*: *//p') && \
     mkdir -p /app && echo "$TAUTULLI_VERSION" > /app/version && \
     echo "$TAUTULLI_VERSION" > /usr/local/www/tautulli/version.txt && \

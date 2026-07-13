@@ -1,11 +1,11 @@
 {
-  "generated": "2026-07-01T15:50:10Z",
+  "generated": "2026-07-13T10:43:28Z",
   "image": "tautulli",
   "tags": {
     "latest": {
       "app_version": "v2.17.2",
       "arch": "amd64",
-      "generated": "2026-07-01T15:48:52Z",
+      "generated": "2026-07-13T10:16:40Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -27,7 +27,7 @@
           },
           {
             "name": "FreeBSD-clibs",
-            "version": "15.1"
+            "version": "15.1p1"
           },
           {
             "name": "FreeBSD-ctf-lib",
@@ -99,7 +99,7 @@
           },
           {
             "name": "FreeBSD-runtime",
-            "version": "15.1"
+            "version": "15.1p1"
           },
           {
             "name": "FreeBSD-tcpd",
@@ -111,7 +111,7 @@
           },
           {
             "name": "FreeBSD-utilities",
-            "version": "15.1"
+            "version": "15.1p1"
           },
           {
             "name": "FreeBSD-xz-lib",
@@ -119,7 +119,7 @@
           },
           {
             "name": "FreeBSD-zfs-lib",
-            "version": "15.1"
+            "version": "15.1p1"
           },
           {
             "name": "FreeBSD-zlib",
@@ -139,11 +139,11 @@
           },
           {
             "name": "ca_root_nss",
-            "version": "3.124"
+            "version": "3.125"
           },
           {
             "name": "curl",
-            "version": "8.20.0"
+            "version": "8.21.0"
           },
           {
             "name": "execline",
@@ -151,7 +151,7 @@
           },
           {
             "name": "expat",
-            "version": "2.8.1"
+            "version": "2.8.2"
           },
           {
             "name": "gettext-runtime",
@@ -167,7 +167,7 @@
           },
           {
             "name": "jq",
-            "version": "1.8.1"
+            "version": "1.8.2"
           },
           {
             "name": "libedit",
@@ -191,7 +191,7 @@
           },
           {
             "name": "libpsl",
-            "version": "0.21.5_2"
+            "version": "0.22.0"
           },
           {
             "name": "libssh2",
@@ -223,7 +223,7 @@
           },
           {
             "name": "py312-cryptography",
-            "version": "48.0.0_1,1"
+            "version": "48.0.1,1"
           },
           {
             "name": "py312-pip",
@@ -271,7 +271,7 @@
           },
           {
             "name": "sqlite3",
-            "version": "3.53.1,1"
+            "version": "3.53.3,1"
           },
           {
             "name": "zstd",
@@ -289,7 +289,7 @@
           },
           {
             "name": "cryptography",
-            "version": "48.0.0"
+            "version": "48.0.1"
           },
           {
             "name": "example",
@@ -344,7 +344,7 @@
     "pkg": {
       "app_version": "2.16.0_1",
       "arch": "amd64",
-      "generated": "2026-07-01T15:48:20Z",
+      "generated": "2026-07-13T10:15:58Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -366,7 +366,7 @@
           },
           {
             "name": "FreeBSD-clibs",
-            "version": "15.1"
+            "version": "15.1p1"
           },
           {
             "name": "FreeBSD-ctf-lib",
@@ -438,7 +438,7 @@
           },
           {
             "name": "FreeBSD-runtime",
-            "version": "15.1"
+            "version": "15.1p1"
           },
           {
             "name": "FreeBSD-tcpd",
@@ -450,7 +450,7 @@
           },
           {
             "name": "FreeBSD-utilities",
-            "version": "15.1"
+            "version": "15.1p1"
           },
           {
             "name": "FreeBSD-xz-lib",
@@ -458,7 +458,7 @@
           },
           {
             "name": "FreeBSD-zfs-lib",
-            "version": "15.1"
+            "version": "15.1p1"
           },
           {
             "name": "FreeBSD-zlib",
@@ -482,7 +482,7 @@
           },
           {
             "name": "expat",
-            "version": "2.8.1"
+            "version": "2.8.2"
           },
           {
             "name": "gettext-runtime",
@@ -494,7 +494,7 @@
           },
           {
             "name": "jq",
-            "version": "1.8.1"
+            "version": "1.8.2"
           },
           {
             "name": "libedit",
@@ -522,7 +522,7 @@
           },
           {
             "name": "py312-cryptography",
-            "version": "48.0.0_1,1"
+            "version": "48.0.1,1"
           },
           {
             "name": "py312-pycparser",
@@ -570,7 +570,7 @@
           },
           {
             "name": "sqlite3",
-            "version": "3.53.1,1"
+            "version": "3.53.3,1"
           },
           {
             "name": "tautulli",
@@ -588,7 +588,7 @@
           },
           {
             "name": "cryptography",
-            "version": "48.0.0"
+            "version": "48.0.1"
           },
           {
             "name": "example",
@@ -643,7 +643,7 @@
     "pkg-latest": {
       "app_version": "2.16.0_1",
       "arch": "amd64",
-      "generated": "2026-07-01T15:47:40Z",
+      "generated": "2026-07-13T10:42:14Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -665,7 +665,7 @@
           },
           {
             "name": "FreeBSD-clibs",
-            "version": "15.1"
+            "version": "15.1p1"
           },
           {
             "name": "FreeBSD-ctf-lib",
@@ -737,7 +737,7 @@
           },
           {
             "name": "FreeBSD-runtime",
-            "version": "15.1"
+            "version": "15.1p1"
           },
           {
             "name": "FreeBSD-tcpd",
@@ -749,7 +749,7 @@
           },
           {
             "name": "FreeBSD-utilities",
-            "version": "15.1"
+            "version": "15.1p1"
           },
           {
             "name": "FreeBSD-xz-lib",
@@ -757,7 +757,7 @@
           },
           {
             "name": "FreeBSD-zfs-lib",
-            "version": "15.1"
+            "version": "15.1p1"
           },
           {
             "name": "FreeBSD-zlib",
@@ -773,7 +773,7 @@
           },
           {
             "name": "ca_root_nss",
-            "version": "3.124"
+            "version": "3.125"
           },
           {
             "name": "execline",
@@ -781,7 +781,7 @@
           },
           {
             "name": "expat",
-            "version": "2.8.1"
+            "version": "2.8.2"
           },
           {
             "name": "gettext-runtime",
@@ -793,7 +793,7 @@
           },
           {
             "name": "jq",
-            "version": "1.8.1"
+            "version": "1.8.2"
           },
           {
             "name": "libedit",
@@ -821,7 +821,7 @@
           },
           {
             "name": "py312-cryptography",
-            "version": "48.0.0_1,1"
+            "version": "48.0.1,1"
           },
           {
             "name": "py312-pycparser",
@@ -869,7 +869,7 @@
           },
           {
             "name": "sqlite3",
-            "version": "3.53.1,1"
+            "version": "3.53.3,1"
           },
           {
             "name": "tautulli",
@@ -887,7 +887,7 @@
           },
           {
             "name": "cryptography",
-            "version": "48.0.0"
+            "version": "48.0.1"
           },
           {
             "name": "example",

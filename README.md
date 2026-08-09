@@ -74,7 +74,7 @@ services:
     name: tautulli
     options:
       - container: 'boot args:--pull'
-      - expose: '8181:8181 proto:tcp' \
+      - expose: '8181:8181 proto:tcp'
     oci:
       user: root
       environment:
@@ -179,7 +179,7 @@ Access at: `http://localhost:8181`
 
 **Architectures:** amd64
 **User:** `bsd` (UID/GID via PUID/PGID, defaults to 1000:1000)
-**Base:** FreeBSD 15.1-latest
+**Base:** FreeBSD 15.1
 
 ---
 

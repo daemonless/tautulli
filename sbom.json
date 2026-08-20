@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-09T09:43:29Z",
+  "generated": "2026-08-20T07:17:05Z",
   "image": "tautulli",
   "tags": {
     "latest": {
       "app_version": "v2.17.2",
       "arch": "amd64",
-      "generated": "2026-08-09T09:41:00Z",
+      "generated": "2026-08-20T07:16:08Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -245,7 +245,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.125"
+            "version": "3.126.1"
           },
           {
             "licenses": [
@@ -309,7 +309,7 @@
               "MIT"
             ],
             "name": "libffi",
-            "version": "3.7.1"
+            "version": "3.8.0"
           },
           {
             "licenses": [
@@ -382,7 +382,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.8.1_1"
+            "version": "2.8.4"
           },
           {
             "licenses": [
@@ -432,7 +432,7 @@
               "PSFL"
             ],
             "name": "py312-sqlite3",
-            "version": "3.12.13_10"
+            "version": "3.12.14_10"
           },
           {
             "licenses": [
@@ -450,7 +450,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.13_3"
+            "version": "3.12.14"
           },
           {
             "licenses": [
@@ -537,7 +537,7 @@
           {
             "name": "sqlite3",
             "purl": "",
-            "version": "3.12.13"
+            "version": "3.12.14"
           },
           {
             "name": "typing_extensions",
@@ -565,7 +565,7 @@
     "pkg": {
       "app_version": "2.16.0_1",
       "arch": "amd64",
-      "generated": "2026-08-09T09:40:56Z",
+      "generated": "2026-08-20T07:15:45Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -848,7 +848,7 @@
               "MIT"
             ],
             "name": "libffi",
-            "version": "3.7.1"
+            "version": "3.8.0"
           },
           {
             "licenses": [
@@ -869,7 +869,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.8.1_1"
+            "version": "2.8.4"
           },
           {
             "licenses": [
@@ -920,7 +920,7 @@
               "PSFL"
             ],
             "name": "py312-sqlite3",
-            "version": "3.12.13_10"
+            "version": "3.12.14_10"
           },
           {
             "licenses": [
@@ -938,7 +938,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.13_3"
+            "version": "3.12.14"
           },
           {
             "licenses": [
@@ -1024,7 +1024,7 @@
           {
             "name": "sqlite3",
             "purl": "",
-            "version": "3.12.13"
+            "version": "3.12.14"
           },
           {
             "name": "typing_extensions",
@@ -1052,7 +1052,7 @@
     "pkg-latest": {
       "app_version": "2.16.0_1",
       "arch": "amd64",
-      "generated": "2026-08-09T09:41:45Z",
+      "generated": "2026-08-19T21:51:29Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1335,7 +1335,7 @@
               "MIT"
             ],
             "name": "libffi",
-            "version": "3.7.1"
+            "version": "3.8.0"
           },
           {
             "licenses": [
@@ -1356,7 +1356,7 @@
               "BSD2CLAUSE"
             ],
             "name": "pkg",
-            "version": "2.8.1_1"
+            "version": "2.8.4"
           },
           {
             "licenses": [
@@ -1407,7 +1407,7 @@
               "PSFL"
             ],
             "name": "py312-sqlite3",
-            "version": "3.12.13_10"
+            "version": "3.12.14_10"
           },
           {
             "licenses": [
@@ -1425,7 +1425,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.13_3"
+            "version": "3.12.14"
           },
           {
             "licenses": [
@@ -1511,7 +1511,7 @@
           {
             "name": "sqlite3",
             "purl": "",
-            "version": "3.12.13"
+            "version": "3.12.14"
           },
           {
             "name": "typing_extensions",

@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-20T07:17:05Z",
+  "generated": "2026-08-21T21:36:25Z",
   "image": "tautulli",
   "tags": {
-    "latest": {
+    "latest-amd64": {
       "app_version": "v2.17.2",
       "arch": "amd64",
-      "generated": "2026-08-20T07:16:08Z",
+      "generated": "2026-08-21T21:35:37Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -245,7 +245,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.126.1"
+            "version": "3.127"
           },
           {
             "licenses": [
@@ -338,7 +338,7 @@
               "MIT"
             ],
             "name": "libpsl",
-            "version": "0.22.0"
+            "version": "0.23.0"
           },
           {
             "licenses": [
@@ -562,10 +562,10 @@
         "total": 78
       }
     },
-    "pkg": {
+    "pkg-amd64": {
       "app_version": "2.16.0_1",
       "arch": "amd64",
-      "generated": "2026-08-20T07:15:45Z",
+      "generated": "2026-08-21T21:30:43Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -798,7 +798,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.125"
+            "version": "3.126.1"
           },
           {
             "licenses": [
@@ -1049,10 +1049,10 @@
         "total": 68
       }
     },
-    "pkg-latest": {
+    "pkg-latest-amd64": {
       "app_version": "2.16.0_1",
       "arch": "amd64",
-      "generated": "2026-08-19T21:51:29Z",
+      "generated": "2026-08-21T21:31:06Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1285,7 +1285,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.125"
+            "version": "3.126.1"
           },
           {
             "licenses": [

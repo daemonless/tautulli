@@ -45,8 +45,11 @@ services:
       - "/path/to/containers/tautulli:/config"
     ports:
       - "8181:8181"
-    restart: unless-stopped
+    # always (not unless-stopped) so FreeBSD's podman rc.d auto-starts it at boot
+    restart: always
 ```
+
+Save as `compose.yaml`, then run `podman-compose up -d`.
 
 ### AppJail Director
 **.env**:
@@ -99,6 +102,9 @@ ARG tag=latest
 OPTION overwrite=force
 OPTION from=ghcr.io/daemonless/tautulli:${tag}
 ```
+
+Save the files above, then run `appjail-director up`.
+
 **Note**: Exposing ports in AppJail means that your service can be reached from remote hosts. If that is not your intention, do not expose the ports and communicate with the service using the IPv4 address assigned by the virtual network.
 
 ### Podman CLI
@@ -113,6 +119,8 @@ podman run -d --name tautulli \
   -v /path/to/containers/tautulli:/config \
   ghcr.io/daemonless/tautulli:latest
 ```
+
+Save as `run.sh`, then run `sh run.sh`.
 
 ### AppJail
 
@@ -130,7 +138,40 @@ appjail oci run -Pd \
   -o fstab="/path/to/containers/tautulli /config <pseudofs>" \
   ghcr.io/daemonless/tautulli:latest tautulli
 ```
+
+Save as `run.sh`, then run `sh run.sh`.
+
 **Note**: Exposing ports in AppJail means that your service can be reached from remote hosts. If that is not your intention, do not expose the ports and communicate with the service using the IPv4 address assigned by the virtual network.
+
+### Bastille
+
+> [!WARNING]
+> Bastille's OCI support is **experimental**. It requires `buildah`, shares the host network stack (`inherit`), and persists image-declared volumes under `--data-path`.
+
+```yaml
+services:
+  tautulli:
+    image: "ghcr.io/daemonless/tautulli:latest"
+    container_name: tautulli
+    network_mode: host  # jail shares host networking
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=UTC
+      - TAUTULLI_DOCKER=True
+```
+
+Save as `podman-compose.yml`, then run `bastille up`. Or via CLI:
+
+```bash
+bastille create -O \
+  --env PUID=1000 \
+  --env PGID=1000 \
+  --env TZ=UTC \
+  --env TAUTULLI_DOCKER=True \
+  --data-path /path/to/containers/tautulli \
+  tautulli ghcr.io/daemonless/tautulli:latest inherit
+```
 
 ### Ansible
 
@@ -151,6 +192,8 @@ appjail oci run -Pd \
     volumes:
       - "/path/to/containers/tautulli:/config"
 ```
+
+Save as `tautulli-deploy.yaml`, then run `ansible-playbook tautulli-deploy.yaml`.
 
 Access at: `http://localhost:8181`
 

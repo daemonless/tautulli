@@ -1,11 +1,11 @@
 {
-  "generated": "2026-08-21T21:36:25Z",
+  "generated": "2026-08-26T08:02:33Z",
   "image": "tautulli",
   "tags": {
     "latest-amd64": {
-      "app_version": "v2.17.2",
+      "app_version": "v2.18.0",
       "arch": "amd64",
-      "generated": "2026-08-21T21:35:37Z",
+      "generated": "2026-08-26T07:53:53Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -266,7 +266,7 @@
               "MIT"
             ],
             "name": "expat",
-            "version": "2.8.2"
+            "version": "2.8.3"
           },
           {
             "licenses": [
@@ -331,14 +331,14 @@
               "MIT"
             ],
             "name": "libnghttp2",
-            "version": "1.69.0"
+            "version": "1.70.0"
           },
           {
             "licenses": [
               "MIT"
             ],
             "name": "libpsl",
-            "version": "0.23.0"
+            "version": "0.23.3"
           },
           {
             "licenses": [
@@ -389,7 +389,7 @@
               "MIT"
             ],
             "name": "py312-cffi",
-            "version": "2.1.0"
+            "version": "2.1.1"
           },
           {
             "licenses": [
@@ -397,7 +397,7 @@
               "APACHE20"
             ],
             "name": "py312-cryptography",
-            "version": "48.0.1_1,1"
+            "version": "49.0.0,1"
           },
           {
             "licenses": [
@@ -418,7 +418,7 @@
               "APACHE20"
             ],
             "name": "py312-pyopenssl",
-            "version": "26.2.0,1"
+            "version": "26.3.0,1"
           },
           {
             "licenses": [
@@ -478,7 +478,7 @@
               "PD"
             ],
             "name": "sqlite3",
-            "version": "3.53.3,1"
+            "version": "3.53.4,1"
           },
           {
             "licenses": [
@@ -497,12 +497,12 @@
           {
             "name": "cffi",
             "purl": "",
-            "version": "2.1.0"
+            "version": "2.1.1"
           },
           {
             "name": "cryptography",
             "purl": "",
-            "version": "48.0.1"
+            "version": "49.0.0"
           },
           {
             "name": "example",
@@ -527,7 +527,7 @@
           {
             "name": "pyopenssl",
             "purl": "",
-            "version": "26.2.0"
+            "version": "26.3.0"
           },
           {
             "name": "setuptools",
@@ -565,7 +565,7 @@
     "pkg-amd64": {
       "app_version": "2.16.0_1",
       "arch": "amd64",
-      "generated": "2026-08-21T21:30:43Z",
+      "generated": "2026-08-26T07:56:52Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -812,7 +812,7 @@
               "MIT"
             ],
             "name": "expat",
-            "version": "2.8.2"
+            "version": "2.8.3"
           },
           {
             "licenses": [
@@ -876,7 +876,7 @@
               "MIT"
             ],
             "name": "py312-cffi",
-            "version": "2.1.0"
+            "version": "2.1.1"
           },
           {
             "licenses": [
@@ -884,7 +884,7 @@
               "APACHE20"
             ],
             "name": "py312-cryptography",
-            "version": "48.0.1_1,1"
+            "version": "49.0.0,1"
           },
           {
             "licenses": [
@@ -906,7 +906,7 @@
               "APACHE20"
             ],
             "name": "py312-pyopenssl",
-            "version": "26.2.0,1"
+            "version": "26.3.0,1"
           },
           {
             "licenses": [
@@ -966,7 +966,7 @@
               "PD"
             ],
             "name": "sqlite3",
-            "version": "3.53.3,1"
+            "version": "3.53.4,1"
           },
           {
             "licenses": [
@@ -984,12 +984,12 @@
           {
             "name": "cffi",
             "purl": "",
-            "version": "2.1.0"
+            "version": "2.1.1"
           },
           {
             "name": "cryptography",
             "purl": "",
-            "version": "48.0.1"
+            "version": "49.0.0"
           },
           {
             "name": "example",
@@ -1014,7 +1014,7 @@
           {
             "name": "pyopenssl",
             "purl": "",
-            "version": "26.2.0"
+            "version": "26.3.0"
           },
           {
             "name": "setuptools",
@@ -1052,7 +1052,7 @@
     "pkg-latest-amd64": {
       "app_version": "2.16.0_1",
       "arch": "amd64",
-      "generated": "2026-08-21T21:31:06Z",
+      "generated": "2026-08-26T07:55:52Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1299,7 +1299,7 @@
               "MIT"
             ],
             "name": "expat",
-            "version": "2.8.2"
+            "version": "2.8.3"
           },
           {
             "licenses": [
@@ -1363,7 +1363,7 @@
               "MIT"
             ],
             "name": "py312-cffi",
-            "version": "2.1.0"
+            "version": "2.1.1"
           },
           {
             "licenses": [
@@ -1371,7 +1371,7 @@
               "APACHE20"
             ],
             "name": "py312-cryptography",
-            "version": "48.0.1_1,1"
+            "version": "49.0.0,1"
           },
           {
             "licenses": [
@@ -1393,7 +1393,7 @@
               "APACHE20"
             ],
             "name": "py312-pyopenssl",
-            "version": "26.2.0,1"
+            "version": "26.3.0,1"
           },
           {
             "licenses": [
@@ -1453,7 +1453,7 @@
               "PD"
             ],
             "name": "sqlite3",
-            "version": "3.53.3,1"
+            "version": "3.53.4,1"
           },
           {
             "licenses": [
@@ -1471,12 +1471,12 @@
           {
             "name": "cffi",
             "purl": "",
-            "version": "2.1.0"
+            "version": "2.1.1"
           },
           {
             "name": "cryptography",
             "purl": "",
-            "version": "48.0.1"
+            "version": "49.0.0"
           },
           {
             "name": "example",
@@ -1501,7 +1501,7 @@
           {
             "name": "pyopenssl",
             "purl": "",
-            "version": "26.2.0"
+            "version": "26.3.0"
           },
           {
             "name": "setuptools",

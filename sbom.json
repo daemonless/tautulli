@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-04T13:33:26Z",
+  "generated": "2026-09-05T07:45:00Z",
   "image": "tautulli",
   "tags": {
     "latest-amd64": {
       "app_version": "v2.18.1",
       "arch": "amd64",
-      "generated": "2026-09-04T13:30:15Z",
+      "generated": "2026-09-05T07:41:42Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -375,7 +375,7 @@
               "BSD3CLAUSE"
             ],
             "name": "pcre2",
-            "version": "10.47_1"
+            "version": "10.48"
           },
           {
             "licenses": [
@@ -397,7 +397,7 @@
               "APACHE20"
             ],
             "name": "py312-cryptography",
-            "version": "49.0.0,1"
+            "version": "50.0.0,1"
           },
           {
             "licenses": [
@@ -418,7 +418,7 @@
               "APACHE20"
             ],
             "name": "py312-pyopenssl",
-            "version": "26.3.0,1"
+            "version": "26.4.0,1"
           },
           {
             "licenses": [
@@ -502,7 +502,7 @@
           {
             "name": "cryptography",
             "purl": "",
-            "version": "49.0.0"
+            "version": "50.0.0"
           },
           {
             "name": "example",
@@ -527,7 +527,7 @@
           {
             "name": "pyopenssl",
             "purl": "",
-            "version": "26.3.0"
+            "version": "26.4.0"
           },
           {
             "name": "setuptools",
@@ -563,9 +563,9 @@
       }
     },
     "pkg-amd64": {
-      "app_version": "2.16.0_1",
+      "app_version": "2.16.0_2",
       "arch": "amd64",
-      "generated": "2026-09-04T13:32:48Z",
+      "generated": "2026-09-05T07:44:14Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -884,7 +884,7 @@
               "APACHE20"
             ],
             "name": "py312-cryptography",
-            "version": "49.0.0,1"
+            "version": "50.0.0,1"
           },
           {
             "licenses": [
@@ -906,7 +906,7 @@
               "APACHE20"
             ],
             "name": "py312-pyopenssl",
-            "version": "26.3.0,1"
+            "version": "26.4.0,1"
           },
           {
             "licenses": [
@@ -973,7 +973,7 @@
               "GPLv3+"
             ],
             "name": "tautulli",
-            "version": "2.16.0_1"
+            "version": "2.16.0_2"
           }
         ],
         "go": [],
@@ -989,7 +989,7 @@
           {
             "name": "cryptography",
             "purl": "",
-            "version": "49.0.0"
+            "version": "50.0.0"
           },
           {
             "name": "example",
@@ -1014,7 +1014,7 @@
           {
             "name": "pyopenssl",
             "purl": "",
-            "version": "26.3.0"
+            "version": "26.4.0"
           },
           {
             "name": "setuptools",
@@ -1050,9 +1050,9 @@
       }
     },
     "pkg-latest-amd64": {
-      "app_version": "2.16.0_1",
+      "app_version": "2.16.0_2",
       "arch": "amd64",
-      "generated": "2026-09-04T13:32:33Z",
+      "generated": "2026-09-05T07:43:09Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1371,7 +1371,7 @@
               "APACHE20"
             ],
             "name": "py312-cryptography",
-            "version": "49.0.0,1"
+            "version": "50.0.0,1"
           },
           {
             "licenses": [
@@ -1393,7 +1393,7 @@
               "APACHE20"
             ],
             "name": "py312-pyopenssl",
-            "version": "26.3.0,1"
+            "version": "26.4.0,1"
           },
           {
             "licenses": [
@@ -1460,7 +1460,7 @@
               "GPLv3+"
             ],
             "name": "tautulli",
-            "version": "2.16.0_1"
+            "version": "2.16.0_2"
           }
         ],
         "go": [],
@@ -1476,7 +1476,7 @@
           {
             "name": "cryptography",
             "purl": "",
-            "version": "49.0.0"
+            "version": "50.0.0"
           },
           {
             "name": "example",
@@ -1501,7 +1501,7 @@
           {
             "name": "pyopenssl",
             "purl": "",
-            "version": "26.3.0"
+            "version": "26.4.0"
           },
           {
             "name": "setuptools",

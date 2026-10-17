@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-09T16:40:00Z",
+  "generated": "2026-10-17T11:01:36Z",
   "image": "tautulli",
   "tags": {
     "latest-aarch64": {
       "app_version": "v2.18.2",
       "arch": "aarch64",
-      "generated": "2026-10-09T16:37:49Z",
+      "generated": "2026-10-17T11:00:05Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -259,7 +259,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.130"
+            "version": "3.131"
           },
           {
             "licenses": [
@@ -280,7 +280,7 @@
               "MIT"
             ],
             "name": "expat",
-            "version": "2.8.4"
+            "version": "2.9.0"
           },
           {
             "licenses": [
@@ -579,7 +579,7 @@
     "pkg-aarch64": {
       "app_version": "2.18.1",
       "arch": "aarch64",
-      "generated": "2026-10-09T16:37:54Z",
+      "generated": "2026-10-17T11:00:09Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -840,7 +840,7 @@
               "MIT"
             ],
             "name": "expat",
-            "version": "2.8.4"
+            "version": "2.9.0"
           },
           {
             "licenses": [
@@ -1080,7 +1080,7 @@
     "pkg-latest-aarch64": {
       "app_version": "2.18.1",
       "arch": "aarch64",
-      "generated": "2026-10-09T16:37:59Z",
+      "generated": "2026-10-17T11:00:12Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1341,7 +1341,7 @@
               "MIT"
             ],
             "name": "expat",
-            "version": "2.8.4"
+            "version": "2.9.0"
           },
           {
             "licenses": [

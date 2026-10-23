@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-17T10:08:37Z",
+  "generated": "2026-10-23T08:22:33Z",
   "image": "tautulli",
   "tags": {
     "latest-amd64": {
       "app_version": "v2.18.2",
       "arch": "amd64",
-      "generated": "2026-10-17T10:07:45Z",
+      "generated": "2026-10-23T08:17:05Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -189,7 +189,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -238,7 +238,7 @@
               "PD"
             ],
             "name": "FreeBSD-zoneinfo",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -267,13 +267,6 @@
             ],
             "name": "curl",
             "version": "8.22.0"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "execline",
-            "version": "2.9.8.1"
           },
           {
             "licenses": [
@@ -411,7 +404,7 @@
               "APACHE20"
             ],
             "name": "py312-cryptography",
-            "version": "50.0.1,1"
+            "version": "50.0.1_1,1"
           },
           {
             "licenses": [
@@ -446,7 +439,7 @@
               "PSFL"
             ],
             "name": "py312-sqlite3",
-            "version": "3.12.14_10"
+            "version": "3.12.15_10"
           },
           {
             "licenses": [
@@ -464,7 +457,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.14_1"
+            "version": "3.12.15"
           },
           {
             "licenses": [
@@ -472,20 +465,6 @@
             ],
             "name": "readline",
             "version": "8.3.6"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "s6",
-            "version": "2.14.0.1"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "skalibs",
-            "version": "2.14.5.1"
           },
           {
             "licenses": [
@@ -551,7 +530,7 @@
           {
             "name": "sqlite3",
             "purl": "",
-            "version": "3.12.14"
+            "version": "3.12.15"
           },
           {
             "name": "typing_extensions",
@@ -565,7 +544,7 @@
       "source": "upstream",
       "summary": {
         "dotnet": 0,
-        "freebsd": 70,
+        "freebsd": 67,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -573,13 +552,13 @@
         "python": 10,
         "ruby": 0,
         "rust": 0,
-        "total": 80
+        "total": 77
       }
     },
     "pkg-amd64": {
       "app_version": "2.18.1",
       "arch": "amd64",
-      "generated": "2026-10-17T10:06:59Z",
+      "generated": "2026-10-23T08:20:42Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -763,7 +742,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -812,7 +791,7 @@
               "PD"
             ],
             "name": "FreeBSD-zoneinfo",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -827,13 +806,6 @@
             ],
             "name": "ca_root_nss",
             "version": "3.131"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "execline",
-            "version": "2.9.8.1"
           },
           {
             "licenses": [
@@ -912,7 +884,7 @@
               "APACHE20"
             ],
             "name": "py312-cryptography",
-            "version": "50.0.1,1"
+            "version": "50.0.1_1,1"
           },
           {
             "licenses": [
@@ -927,7 +899,7 @@
               "BSD2CLAUSE"
             ],
             "name": "py312-pycryptodomex",
-            "version": "3.23.0"
+            "version": "3.24.1"
           },
           {
             "licenses": [
@@ -948,7 +920,7 @@
               "PSFL"
             ],
             "name": "py312-sqlite3",
-            "version": "3.12.14_10"
+            "version": "3.12.15_10"
           },
           {
             "licenses": [
@@ -966,7 +938,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.14_1"
+            "version": "3.12.15"
           },
           {
             "licenses": [
@@ -974,20 +946,6 @@
             ],
             "name": "readline",
             "version": "8.3.6"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "s6",
-            "version": "2.14.0.1"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "skalibs",
-            "version": "2.14.5.1"
           },
           {
             "licenses": [
@@ -1037,7 +995,7 @@
           {
             "name": "pycryptodomex",
             "purl": "",
-            "version": "3.23.0"
+            "version": "3.24.1"
           },
           {
             "name": "pyopenssl",
@@ -1052,7 +1010,7 @@
           {
             "name": "sqlite3",
             "purl": "",
-            "version": "3.12.14"
+            "version": "3.12.15"
           },
           {
             "name": "typing_extensions",
@@ -1066,7 +1024,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 60,
+        "freebsd": 57,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -1074,13 +1032,13 @@
         "python": 10,
         "ruby": 0,
         "rust": 0,
-        "total": 70
+        "total": 67
       }
     },
     "pkg-latest-amd64": {
       "app_version": "2.18.1",
       "arch": "amd64",
-      "generated": "2026-10-17T10:07:44Z",
+      "generated": "2026-10-23T08:10:35Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1264,7 +1222,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -1313,7 +1271,7 @@
               "PD"
             ],
             "name": "FreeBSD-zoneinfo",
-            "version": "15.1p4"
+            "version": "15.1p5"
           },
           {
             "licenses": [
@@ -1328,13 +1286,6 @@
             ],
             "name": "ca_root_nss",
             "version": "3.131"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "execline",
-            "version": "2.9.8.1"
           },
           {
             "licenses": [
@@ -1413,7 +1364,7 @@
               "APACHE20"
             ],
             "name": "py312-cryptography",
-            "version": "50.0.1,1"
+            "version": "50.0.1_1,1"
           },
           {
             "licenses": [
@@ -1428,7 +1379,7 @@
               "BSD2CLAUSE"
             ],
             "name": "py312-pycryptodomex",
-            "version": "3.23.0"
+            "version": "3.24.1"
           },
           {
             "licenses": [
@@ -1449,7 +1400,7 @@
               "PSFL"
             ],
             "name": "py312-sqlite3",
-            "version": "3.12.14_10"
+            "version": "3.12.15_10"
           },
           {
             "licenses": [
@@ -1467,7 +1418,7 @@
               "PSFL"
             ],
             "name": "python312",
-            "version": "3.12.14_1"
+            "version": "3.12.15"
           },
           {
             "licenses": [
@@ -1475,20 +1426,6 @@
             ],
             "name": "readline",
             "version": "8.3.6"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "s6",
-            "version": "2.14.0.1"
-          },
-          {
-            "licenses": [
-              "ISCL"
-            ],
-            "name": "skalibs",
-            "version": "2.14.5.1"
           },
           {
             "licenses": [
@@ -1538,7 +1475,7 @@
           {
             "name": "pycryptodomex",
             "purl": "",
-            "version": "3.23.0"
+            "version": "3.24.1"
           },
           {
             "name": "pyopenssl",
@@ -1553,7 +1490,7 @@
           {
             "name": "sqlite3",
             "purl": "",
-            "version": "3.12.14"
+            "version": "3.12.15"
           },
           {
             "name": "typing_extensions",
@@ -1567,7 +1504,7 @@
       "source": "pkg",
       "summary": {
         "dotnet": 0,
-        "freebsd": 60,
+        "freebsd": 57,
         "go": 0,
         "java": 0,
         "node": 0,
@@ -1575,7 +1512,7 @@
         "python": 10,
         "ruby": 0,
         "rust": 0,
-        "total": 70
+        "total": 67
       }
     }
   }

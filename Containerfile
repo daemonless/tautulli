@@ -5,7 +5,7 @@
 # --------------------------------------------------------------------------
 
 ARG BASE_VERSION=15.1-latest
-FROM ghcr.io/daemonless/base:${BASE_VERSION}
+FROM ghcr.io/daemonless/base-exec:${BASE_VERSION}
 
 # Disable Tautulli internal auto-updater (updates via container rebuild)
 ENV TAUTULLI_DOCKER=True
@@ -62,9 +62,10 @@ RUN mkdir -p /config && \
 
 # Copy service definition and init scripts
 COPY root/ /
+RUN rm /daemonless/libexec/tautulli.pkg && \
+    chmod +x /daemonless/libexec/tautulli /daemonless/init.d/*
 
-# Make scripts executable
-RUN chmod +x /etc/services.d/tautulli/run /etc/cont-init.d/* 2>/dev/null || true
+CMD ["/daemonless/libexec/tautulli"]
 
 # --- Expose (Injected by Generator) ---
 EXPOSE 8181

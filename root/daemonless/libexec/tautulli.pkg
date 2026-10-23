@@ -1,5 +1,5 @@
 #!/bin/sh
-# Tautulli s6 service (pkg version)
+# Start tautulli; /init has already dropped to the run user.
 
 export HOME=/config
 export TAUTULLI_DOCKER=True
@@ -8,4 +8,4 @@ export LC_ALL=C.UTF-8
 export LANG=C.UTF-8
 
 cd /usr/local/www/tautulli
-exec /usr/local/bin/s6-setuidgid bsd /usr/local/bin/python3 Tautulli.py --nolaunch --datadir /config
+exec /usr/local/bin/python3 Tautulli.py --nolaunch --datadir /config

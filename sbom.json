@@ -1,11 +1,11 @@
 {
-  "generated": "2026-10-23T08:22:33Z",
+  "generated": "2026-11-02T00:38:33Z",
   "image": "tautulli",
   "tags": {
     "latest-amd64": {
       "app_version": "v2.18.2",
       "arch": "amd64",
-      "generated": "2026-10-23T08:17:05Z",
+      "generated": "2026-11-02T00:36:26Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -189,7 +189,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p5"
+            "version": "15.1p6"
           },
           {
             "licenses": [
@@ -252,21 +252,21 @@
               "MIT"
             ],
             "name": "brotli",
-            "version": "1.2.0,1"
+            "version": "1.2.1,1"
           },
           {
             "licenses": [
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.131"
+            "version": "3.132"
           },
           {
             "licenses": [
               "MIT"
             ],
             "name": "curl",
-            "version": "8.22.0"
+            "version": "8.23.0"
           },
           {
             "licenses": [
@@ -471,7 +471,7 @@
               "PD"
             ],
             "name": "sqlite3",
-            "version": "3.53.4,1"
+            "version": "3.54.1,1"
           },
           {
             "licenses": [
@@ -558,7 +558,7 @@
     "pkg-amd64": {
       "app_version": "2.18.1",
       "arch": "amd64",
-      "generated": "2026-10-23T08:20:42Z",
+      "generated": "2026-11-02T00:36:24Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -742,7 +742,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p5"
+            "version": "15.1p6"
           },
           {
             "licenses": [
@@ -805,7 +805,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.131"
+            "version": "3.132"
           },
           {
             "licenses": [
@@ -952,7 +952,7 @@
               "PD"
             ],
             "name": "sqlite3",
-            "version": "3.53.4,1"
+            "version": "3.54.1,1"
           },
           {
             "licenses": [
@@ -1038,7 +1038,7 @@
     "pkg-latest-amd64": {
       "app_version": "2.18.1",
       "arch": "amd64",
-      "generated": "2026-10-23T08:10:35Z",
+      "generated": "2026-11-02T00:37:41Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1222,7 +1222,7 @@
               "BSD2CLAUSE"
             ],
             "name": "FreeBSD-runtime",
-            "version": "15.1p5"
+            "version": "15.1p6"
           },
           {
             "licenses": [
@@ -1285,7 +1285,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.131"
+            "version": "3.132"
           },
           {
             "licenses": [
@@ -1432,7 +1432,7 @@
               "PD"
             ],
             "name": "sqlite3",
-            "version": "3.53.4,1"
+            "version": "3.54.1,1"
           },
           {
             "licenses": [

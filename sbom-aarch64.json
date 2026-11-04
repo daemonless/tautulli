@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-02T01:32:09Z",
+  "generated": "2026-11-04T14:38:59Z",
   "image": "tautulli",
   "tags": {
     "latest-aarch64": {
       "app_version": "v2.18.2",
       "arch": "aarch64",
-      "generated": "2026-11-02T01:30:38Z",
+      "generated": "2026-11-04T14:36:46Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -252,21 +252,21 @@
               "MIT"
             ],
             "name": "brotli",
-            "version": "1.2.0,1"
+            "version": "1.2.1,1"
           },
           {
             "licenses": [
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.131"
+            "version": "3.132"
           },
           {
             "licenses": [
               "MIT"
             ],
             "name": "curl",
-            "version": "8.22.0"
+            "version": "8.23.0"
           },
           {
             "licenses": [
@@ -558,7 +558,7 @@
     "pkg-aarch64": {
       "app_version": "2.18.1",
       "arch": "aarch64",
-      "generated": "2026-11-02T01:30:43Z",
+      "generated": "2026-11-04T14:36:51Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -805,7 +805,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.131"
+            "version": "3.132"
           },
           {
             "licenses": [
@@ -1038,7 +1038,7 @@
     "pkg-latest-aarch64": {
       "app_version": "2.18.1",
       "arch": "aarch64",
-      "generated": "2026-11-02T01:30:48Z",
+      "generated": "2026-11-04T14:36:56Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1285,7 +1285,7 @@
               "MPL20"
             ],
             "name": "ca_root_nss",
-            "version": "3.131"
+            "version": "3.132"
           },
           {
             "licenses": [

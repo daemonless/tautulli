@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-04T14:38:59Z",
+  "generated": "2026-11-11T20:56:31Z",
   "image": "tautulli",
   "tags": {
     "latest-aarch64": {
-      "app_version": "v2.18.2",
+      "app_version": "v2.19.1",
       "arch": "aarch64",
-      "generated": "2026-11-04T14:36:46Z",
+      "generated": "2026-11-11T20:54:36Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -471,7 +471,7 @@
               "PD"
             ],
             "name": "sqlite3",
-            "version": "3.53.4,1"
+            "version": "3.54.1,1"
           },
           {
             "licenses": [
@@ -558,7 +558,7 @@
     "pkg-aarch64": {
       "app_version": "2.18.1",
       "arch": "aarch64",
-      "generated": "2026-11-04T14:36:51Z",
+      "generated": "2026-11-11T20:54:41Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -952,7 +952,7 @@
               "PD"
             ],
             "name": "sqlite3",
-            "version": "3.53.4,1"
+            "version": "3.54.1,1"
           },
           {
             "licenses": [
@@ -1038,7 +1038,7 @@
     "pkg-latest-aarch64": {
       "app_version": "2.18.1",
       "arch": "aarch64",
-      "generated": "2026-11-04T14:36:56Z",
+      "generated": "2026-11-11T20:54:46Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1432,7 +1432,7 @@
               "PD"
             ],
             "name": "sqlite3",
-            "version": "3.53.4,1"
+            "version": "3.54.1,1"
           },
           {
             "licenses": [

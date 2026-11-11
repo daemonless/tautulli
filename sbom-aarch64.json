@@ -1,11 +1,11 @@
 {
-  "generated": "2026-11-11T20:56:31Z",
+  "generated": "2026-11-11T23:34:39Z",
   "image": "tautulli",
   "tags": {
     "latest-aarch64": {
       "app_version": "v2.19.1",
       "arch": "aarch64",
-      "generated": "2026-11-11T20:54:36Z",
+      "generated": "2026-11-11T23:32:22Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -558,7 +558,7 @@
     "pkg-aarch64": {
       "app_version": "2.18.1",
       "arch": "aarch64",
-      "generated": "2026-11-11T20:54:41Z",
+      "generated": "2026-11-11T23:32:27Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
@@ -1038,7 +1038,7 @@
     "pkg-latest-aarch64": {
       "app_version": "2.18.1",
       "arch": "aarch64",
-      "generated": "2026-11-11T20:54:46Z",
+      "generated": "2026-11-11T23:32:32Z",
       "packages": {
         "dotnet": [],
         "freebsd": [
